@@ -1,0 +1,2413 @@
+/*------------------------------------------------------------Reset------------------------------------------------------------*/
+td{padding:0;  margin:0;  }
+hr{border-color:transparent;  }
+a{text-decoration:none;  }
+/*------------------------------------------------------------Styles------------------------------------------------------------*/
+#copyright{margin:auto;    text-align:right;
+/*width:1024px;*/
+}
+.headerMenuRow{background-color:#000;}
+#content{
+/*width:1024px;*/
+margin-top:5px;}
+#VerticalMenu{width:155px;    text-align:right;    margin-left:auto;}
+#VerticalContent{}
+#global{min-width:1040px;    margin:auto;    background-color:white;}
+#global table.adminHeader{width:100%;}
+#accessHistoryButton{background:#222222;    border:medium none;    height:20px;    margin-left:10px;    vertical-align:top;    width:20px;    cursor:pointer;    position:relative;}
+/*XXXXX Horloge du Header XXXX*/
+#accessHistoryButton:before{content:"\f017";font-family:"FontAwesome";font-size:14px;position:absolute;color:#d8d8d8;top:5px;left:-5px;}
+#accessHistoryBox{background:url("../image_aff/bg_degLightMirror.gif") repeat-x scroll 0 0 #FFFFFF;    border:1px solid #CCCCCC;    border-radius:5px;    display:none;    left:415px;    position:absolute;    top:92px;    width:470px;    height:140px;    z-index:999999;    -moz-box-shadow:3px 5px 10px black;    -webkit-box-shadow:3px 5px 10px black;    box-shadow:3px 5px 10px black;}
+#accessHistoryClose{background:url("../image_aff/fancy_close.png") repeat scroll -30px 0 transparent;    cursor:pointer;    height:30px;    position:absolute;    display:inline;    right:-15px;    top:-15px;    width:30px;    z-index:1103;}
+#accessHistoryContent{background-color:transparent;    color:#333;    height:100px;    margin-top:10px;    overflow:auto;}
+#accessHistoryTitle{font-size:12px;    font-weight:bold;    padding-top:10px;    text-align:center;    text-transform:uppercase;}
+#accessHistoryContent ul{margin:0}
+#accessHistoryContent ul li{line-height:15px;    margin-left:-15px;}
+.clr{clear:both;}
+.floatLeft{float:left;}
+.floatRight{float:right;}
+.champ02{font-size:10px; color:#000000; width:200px }
+.alerte{font-size:10px; color:#FF3333; font-weight:bold }
+.lien03{font-size:10px; font-weight:bold; color:#FF6535; text-decoration:underline}
+.lien03:hover{font-size:10px; font-weight:bold; color:#FF6535; text-decoration:none}
+.lien04{font-size:10px; font-weight:bold; color:#FFFFFF; text-decoration:underline }
+.lien04:hover{font-size:10px; font-weight:bold; color:#FFFFFF; text-decoration:none }
+.filet01{background-color:#CCCCCC}
+.tt01societe{font-size:10px; font-weight:bold; color:#7CBC05}
+.tt01techno{font-size:10px; font-weight:bold; color:#D86EAA}
+.tt01produits{font-size:10px; font-weight:bold; color:#0570BC}
+.lien01{font-size:10px; font-weight:bold; color:#0570BC; text-decoration:none}
+.lien01:hover{font-size:10px; font-weight:bold; color:#0570BC; text-decoration:underline}
+.champ01{font-size:10px; color:#000000}
+.tt01societe2{font-size:10px; font-weight:bold; color:#845FAF}
+.txt01B{font-size:12px; color:#6B6B6B; font-weight:bold;text-decoration:none;}
+.tt01news{font-size:10px; font-weight:bold; color:#F3535D}
+.txt02{font-size:12px; color:#FF6535}
+.ttXXL01{font-size:18px; font-weight:bold; color:#999999}
+.ttXXL02{font-size:18px; font-weight:bold; color:#FF6535}
+.txt03B{font-size:10px; color:#FFFFFF; font-weight:bold }
+.cell0N_TMP{background-color:#FF0000}
+/*.cell0N{background-color:#FFFFFF}
+*/
+.cell0FF_TMP{background-color:#00FF00 }
+.cell0FF{background-color:#F9F9F9; }
+.gras{font-weight:bold;}
+.txtLeft{text-align:left;}
+.txtCenter{text-align:center;}
+.txtRight{text-align:right;}
+.table01{font-size:12px; color:#000000; background-color:white; border-bottom:1px solid #E1E6EA;}
+.table01 td img{border:none;margin:4px;}
+.table01 td:last-child a{border:none;text-decoration:none;font-weight:bold;    background:#e6007e none;    padding:10px 15px !important;    color:#FFF;    text-transform:uppercase;    border-radius:5px;    font-family:'Lato';    height:auto;    font-size:12px;    line-height:12px;    width:auto;    transition:all 0.2s ease-in-out 0s;    margin:5px;    position:relative;}
+.table01 td:last-child a:before{content:"X";font-family:'Lato';color:red;padding:2px;font-weight:bold;background:white;border-radius:6px;position:absolute;left:1px;top:10px;}
+.table01 td:last-child a:hover{background:black;}
+.txt01{font-size:12px; color:#6B6B6B;}
+.txt01TarifExclus{font-size:12px; color:#6B6B6B; vertical-align:top;}
+.table02{font-size:10px; font-weight:bold; color:#FFFFFF; background-color:#333;}
+.table02 > td{padding:3px 5px;}
+.table03{font-size:10px; font-weight:bold; color:#FFFFFF; background-color:#EFEFEF;}
+.table04{font-size:10px; font-weight:bold; color:#FFFFFF; background-color:#aaaaaa;}
+.table05{font-size:10px;}
+.tableCentered td{text-align:center;}
+.submit01{font-size:11px;font-weight:bold;color:#FFFFFF;background:#ec52a6 url(../image_aff/css_sumit_bt.gif) repeat-x top;height:29px;padding:0px 40px;border:0px;cursor:pointer;}
+.submit01center{font-size:11px;font-weight:bold;color:#FFFFFF;background:#ec52a6 url(../image_aff/css_sumit_bt.gif) repeat-x top;height:29px;padding:0px 40px;border:0px;cursor:pointer;display:block;margin:0 auto;}
+.submit01.disabled,.submit01[disabled]{background:url(../image_aff/css_sumit_bt_disabled.gif) repeat-x;border-color:#999999;}
+.cancel01{font-size:11px;font-weight:bold;color:#ec52a6;background:#FFFFFF;height:29px;padding:0px 40px;border:0px;cursor:pointer;}
+.lien02{font-size:10px; font-weight:bold; color:#6b6b6b; text-decoration:none }
+.lien02:hover{font-size:10px; font-weight:bold; color:#EC008C; text-decoration:underline }
+.txt02B{font-size:12px; color:#EC008C; font-weight:bold }
+.cellRouge{font-size:12px; color:#FFFFFF; background-color:#FF0000}
+.cellOrange{font-size:12px; color:#000000; background-color:#FFCC00}
+.cellVert{font-size:12px; color:#000000; background-color:#00FF00}
+.cellFonce{font-size:12px; color:#000000; background-color:#CCCCCC}
+.cellFoncePoliceLow{font-size:10px; color:#000000; background-color:#CCCCCC}
+.cellTresFonce{font-size:12px;    color:#000000;    background-color:#AAAAAA;}
+.cellFonce2{font-size:12px; font-weight:bold; color:#FFFFFF; background-color:#BFD317}
+.cellBleuDegrade1{font-size:12px; color:#000000; background-color:#C2F9FC}
+.cellBleuDegrade2{font-size:12px; color:#000000; background-color:#A2C9FC}
+.cellBleuDegrade3{font-size:12px; color:#000000; background-color:#82A9FC}
+.cellBleuDegrade4{font-size:12px; color:#000000; background-color:#6099FC}
+.cellRougeDegrade1{font-size:12px; color:#000000; background-color:#FF9500}
+.cellRougeDegrade2{font-size:12px; color:#000000; background-color:#FF7500}
+.cellRougeDegrade3{font-size:12px; color:#000000; background-color:#FF5500}
+.cellRougeDegrade4{font-size:12px; color:#000000; background-color:#FF3500}
+.cellVertDegrade1{font-size:12px; color:#000000; background-color:#D9FF99}
+.cellVertDegrade2{font-size:12px; color:#000000; background-color:#B9FF79}
+.cellVertDegrade3{font-size:12px; color:#000000; background-color:#99FF59}
+.cellVertDegrade4{font-size:12px; color:#000000; background-color:#79FF39}
+.cellJauneDegrade1{font-size:12px; color:#000000; background-color:#FFF900}
+.cellJauneDegrade2{font-size:12px; color:#000000; background-color:#FFE900}
+.cellJauneDegrade3{font-size:12px; color:#000000; background-color:#FFD900}
+.cellJauneDegrade4{font-size:12px; color:#000000; background-color:#FFC900}
+.aideBulle{font-weight:normal; font-size:16px; color:#000000;}
+.aideBulleTitre{font-weight:bold; font-size:18px; color:#000000;}
+.nomInputRouge{font-weight:bold;color:#FF0000;}
+.texterouge{font-size:12px; color:#FF0000; font-weight:bold }
+.textevert{font-size:12px; color:#00FF00; font-weight:bold }
+.textebleu{font-size:10px; color:#EC008C;  }
+.textesousmenu{font-size:10px; color:#6b6b6b;}
+.textesousmenu:hover{font-size:10px; color:#EC008C;  }
+.textesousmenutitre{font-size:10px; color:#6B6B6B; font-weight:bold}
+.textesousmenutitre:hover{font-size:10px; color:#EC008C; font-weight:bold}
+.cellNoColorPoliceLow{font-size:10px; color:#000000;}
+.cellCouleur1{font-size:12px; color:#000000; background-color:#bfe0ff}
+.cellCouleur2{font-size:12px; color:#000000; background-color:#ffe6d4}
+.cellCouleur3{font-size:12px; color:#000000; background-color:#dddddd}
+.cellCouleur4{font-size:12px; color:#000000; background-color:#eeeeee}
+.cellCouleur5{font-size:12px; color:#000000; background-color:#ffffff}
+.cellCouleurVert{font-size:12px; color:#000000; background-color:#5AFC5E}
+.cellCouleurOrange{font-size:12px; color:#000000; background-color:#FF831F}
+.cellCouleurRouge{font-size:12px; color:#000000; background-color:#E2010A}
+.parent{cursor:pointer;}
+#divCommentaire{margin-bottom:5px; margin-left:10px; float:right; height:12px; width:12px; border:#000 1px solid;}
+#divCommentaireTxt{float:right;}
+#AjoutReferencement{margin-top:5px; margin-right:10px; float:right;}
+#AjoutReferencement #title{width:380px;}
+#AjoutReferencement #description{width:380px;}
+#AjoutReferencement #keywords{width:380px;}
+#AjoutReferencement #baseLine{width:380px;}
+#AjoutReferencement #motsClefs{width:380px;}
+#AjoutReferencement #url{width:380px;}
+#AjoutReferencement #idCanalDeVente{width:380px;}
+#ListeReferencement{margin-top:5px; margin-left:10px; float:left;}
+#ListeReferencement #idCanalDeVente{width:380px;}
+#ListeReferencement #idReferencement{width:380px;}
+#msgErreurReferencement{font-size:12px; color:#FF0000}
+#cellErreur{background:#dd0000 url(../image_aff/bg_red.gif) repeat-x; color:white; font-weight:bold; margin:0 auto 10px auto; padding:5px; width:80%; font-size:12px;}
+#cellWarning{background:none; color:#555; font-weight:bold; margin:0 auto 10px auto; padding:5px; width:80%; font-size:12px; font-style:italic; }
+#cellMessage{background:#2ADE00 url(../image_aff/bg_vert.gif) repeat-x; color:#333; font-weight:bold; margin:0 auto 10px auto; padding:5px; width:50%; font-size:12px;}
+#cellErreur li, #cellWarning li, #cellMessage li{list-style-type:none;}
+/*------------------------------------------------------------STYLES par VINZ pour gérer les plans de salle------------------------------------------------------------*/
+#planSalle table#legendeVisu{margin-bottom:10px;}
+table.planSalle{border:4px inset #767676;border-collapse:collapse;text-align:center;margin:0px auto;font-weight:bold;font-size:8px;}
+table.planSalle td{width:16px;height:16px;border:1px solid #767676;cursor:pointer;margin:0px;padding:0px;background-repeat:no-repeat;}
+table.planSalle td:hover{background-color:grey;}
+table.planSalle th{font-size:10px;text-align:center;border:4px inset #767676;}
+table.planSalle th.indice{width:16px;height:16px;border-width:0px 4px;cursor:crosshair;margin:0px;padding:0px;font-weight:normal;font-style:italic;}
+table.planSalle td.rangs{border-right:4px inset #767676;border-left:4px inset #767676;}
+table.planSalle td.rangs .champs{border-width:0px;width:40px;text-align:center;font-weight:normal;}
+td.carre{width:16px;height:16px;border:1px solid #767676;margin:0px;padding:0px;background-repeat:no-repeat;}
+td.places{background-color:#ffffff;}
+.placesDigi{background:url(../image_aff/digitick.gif);}
+.placesDigi2{background:url(../image_aff/digitick2.gif);}
+.placesDigi3{background:url(../image_aff/digitick3.gif);}
+.placesDigi4{background:url(../image_aff/digitick4.gif);}
+.placesDigi5{background:url(../image_aff/digitick5.gif);}
+.placesDigi6{background:url(../image_aff/digitick6.gif);}
+.placesDigi:hover, .placesDigi2:hover, .placesDigi3:hover, .placesDigi4:hover, .placesDigi5:hover, .placesDigi6:hover{background:url(../image_aff/digitick_hover.gif);}
+td.placeSelected{background-color:grey;background-image:none;cursor:default;font-size:6px;color:#ffffff;}
+#legende{text-align:left;border:1px solid #767676;font-size:8px;width:280px;padding:10px;}
+#legende table{border-collapse:collapse;font-size:10px;}
+#legendePontsDepasse{position:relative !important;text-align:left;font-size:10px;left:7px;width:330px;padding:10px;background-color:#CCCCCC;}
+#selecteurPontsOrga{position:relative !important;float:left;font-size:12px;color:#6B6B6B;text-align:left !important;left:5px !important;}
+#selecteurPontsSalle{position:relative !important;float:right;font-size:12px;color:#6B6B6B;text-align:right !important;left:-6px !important;}
+#outils,#outilsTarifs{position:fixed;text-align:center;background-color:#efefef;color:#000000;top:10px;width:100px;right:10px;border:1px solid #000000;}
+#outilsTarifs{width:300px;}
+#outils table,#outilsTarifs table{border-collapse:collapse;font-size:10px;text-align:center;margin:0px auto;}
+#outils table td,#outilsTarifs table td{background-position:center;background-repeat:no-repeat;padding:3px 0px;}
+#outilsTarifs table td{padding:3px;}
+#outilsTarifs table td span{display:block;float:left;}
+#outilsTarifs table td input{vertical-align:middle;}
+#outilsTarifs table td span.placesDigi, #outilsTarifs table td span.placesDigi2, #outilsTarifs table td span.placesDigi3, #outilsTarifs table td span.placesDigi4, #outilsTarifs table td span.placesDigi5, #outilsTarifs table td span.placesDigi6{clear:left;background-repeat:no-repeat;padding-left:16px;}
+#outilsTarifs table td span.tarifPlanDisponible{clear:left;float:none;text-align:left;padding-left:20px;background:url(../image_aff/ico_arbre.gif) no-repeat left;}
+#outilsTarifs table td span.tarifPlanDisponible img{vertical-align:middle;}
+.champs{border:1px solid #767676;font-size:1em;width:40px;text-align:center;font-weight:normal;}
+.champsDisabled{border-width:0px;font-size:1em;width:40px;text-align:center;font-weight:bold;cursor:pointer;}
+.cursor_pointer{cursor:pointer;}
+.lien{cursor:pointer;font-weight:bold;text-decoration:underline;}
+.invisible{display:none;}
+#messagePlan{font-weight:bold;text-align:center;border:1px dotted #767676;margin:10px auto;padding:10px;width:600px;font-size:1.5em;}
+#poids{display:inline;}
+table.planSalle td.placeRef{background:#ff0000;}
+/*------------------------------------------------------------STYLES par VINZ pour gérer les plans de salle multiples------------------------------------------------------------*/
+#dragdrop{text-align:left;color:#000000;margin:0px;padding:2px;background:#efefef url(../image_aff/grille.gif);border:1px solid #000000;height:800px;width:950px;}
+#dragdrop table#position{position:fixed;display:block;background-color:#efefef;color:#000000;top:0px;left:0px;border:1px solid #000000;font-size:10px;overflow:scroll;height:100%;z-index:10000;}
+#dragdrop table#position .valeur{font-weight:bold;}
+#dragdrop table#position input{float:left;}
+#dragdrop img{position:relative;border:1px dashed #000000;margin:0px;padding:0px;}
+#dragdrop a.lien{font-weight:bold;cursor:pointer;color:#000000;display:block;float:left;background-repeat:no-repeat;margin:0px 5px;}
+#dragdrop a.lien:hover{background-color:#888888;color:#ffffff;}
+#dragdrop a#plus{background-image:url(../image_aff/rotation_plus.gif);width:17px;height:17px;}
+#dragdrop a#moins{background-image:url(../image_aff/rotation_moins.gif);width:17px;height:17px;}
+#dragdrop #patientez{position:fixed;z-index:10000;width:123px;height:76px;background:#ffffff url(../image_aff/patientez_fond.gif) no-repeat;color:#ffffff;bottom:5px;left:5px;text-align:center;font-weight:bold;border-width:0px;padding-top:15px;}
+#dragdrop #patientez img{border-width:0px;margin-top:25px;}
+#dragdrop .transparent img{opacity:0.4;-moz-opacity:0.4;}
+#dragdrop .selected img{border:1px dashed red;}
+table.descPlanMultiple{font-size:9px;border-collapse:collapse;}
+table.descPlanMultiple th{border:1px #000000 solid;padding:2px;font-weight:bold;}
+table.descPlanMultiple td{border:1px #000000 solid;}
+/* Impromptu css */
+.jqifade{background-color:#000;}
+div.jqi{position:absolute;width:400px;top:160px;}
+div.jqi .jqicontainer{border:2px solid #999;background-color:#EEE;padding:5px;color:#56789A;font-weight:bold;}
+div.jqi .jqimessage{text-align:center;padding:10px;font-family:Arial,Sans-Serif;}
+div.jqi .jqibuttons{text-align:center;padding:5px 0 0 0;}
+div.jqi button{padding:3px 10px 3px 10px;margin:20px 10px 0 10px;border:2px solid #CCC;background-color:#DDD;cursor:pointer;}
+div.jqi button:hover{border:2px solid #999;}
+/* Impromptu css */
+/*************************************************Nouveaux blocs à intégrer sur chaque nouvelle page*************************************************/
+#blocAdmin #titleAdmin{clear:left;background:url(../image_aff/bg_tetieres_roses.gif) repeat-x;color:#fff;text-align:left;font-weight:bold;padding:4px 15px;text-transform:uppercase;}
+#blocAdmin .subTitleAdminBig{clear:left;background:#ccc;color:#000;text-align:left;font-weight:bold;padding:4px 15px;margin-bottom:10px;height:27px;}
+#blocAdmin .subTitleAdmin span{}
+#blocAdmin .subTitleAdmin .toggleDisplay{cursor:pointer;background:url(../image_aff/ico_flecheHautBas.gif) no-repeat right center;float:right;padding-right:14px;text-decoration:underline;}
+#blocAdmin .subTitleAdmin .toggleDisplay.hover{text-decoration:none;}
+#blocAdmin .subTitleAdmin .toggleDisplay.show{background-position:right -12px;}
+#blocAdmin .subTitleAdmin .toggleDisplay.hide{background-position:right 0px;}
+#blocAdmin .boxAdmin, #blocAdmin .boxAdmin2{float:left;clear:left;border-color:#ccc;border-width:1px;border-style:solid;margin-bottom:10px;width:855px;}
+#blocAdmin .boxAdmin{width:100%;    }
+#blocAdmin .boxAdmin2{}
+#blocAdmin table{text-align:left;width:100%;border-collapse:collapse;}
+#blocAdmin table td{padding:10px;}
+.p582 #blocAdmin table td{padding:0;}
+.p582 .boxAdmin>div{display:none;}
+#blocAdmin table td span{font-weight:bold;}
+.uneLigneSurDeux{background:#efefef;}
+.surbrillance{color:#ffff00;font-weight:bold;}
+.noData{text-align:center;color:#e2017b;font-weight:bold;margin:20px 0;}
+a.link{color:#e2017b;font-weight:normal;text-decoration:underline;cursor:pointer;}
+#blocAdmin .headerBoxAdmin a.link{color:#fff;}
+/*a.link:hover{background:#e2017b;color:#fff;}*/
+a.link:hover{text-decoration: none;}
+#blocAdmin .headerBoxAdmin a.link:hover{background:#fff;color:#e2017b;}
+.fakeButton{text-align:center;height:21px;padding-top:8px;margin:5px 0;_height:29px;}
+.fakeButton a{background:#E6007E;padding:8px 40px;margin-right:5px;border-radius:6px;font-family:"Lato";color:#FFFFFF;font-size:11px;font-weight:bold;text-decoration:none;transition:all 0.5s ease-in;}
+.fakeButton a:hover{background:black;}
+#blocAdmin .noborder{border:0px;}
+#blocAdmin .cartoucheVente{color:#757575;text-align:center;border:1px #757575 solid;min-width:45px;_width:55px;}
+#blocAdmin .cartoucheVente .cartoucheVenteTitle{display:block;text-transform:uppercase;color:#fff;font-size:8px;background:#757575;}
+#blocAdmin .cartoucheVente .cartoucheVenteContent{display:block;font-weight:normal;font-size:10px;color:#000;background:url('../image_aff/css_cartoucheVente.gif') repeat-x;height:15px;padding:0px 2px;}
+#blocAdmin .cartoucheVente .cartoucheVenteContent.quotaVendu{background:url('../image_aff/css_cartoucheVente2.gif') repeat-x;}
+#blocAdmin .cartoucheVente .cartoucheVenteContent span{display:inline;font-weight:bold;color:#000;}
+.online{background:url(../image_aff/bg_vert.gif) repeat-x;}
+.partonline{background:url(../image_aff/bg_orange.gif) repeat-x;}
+.offline{background:url(../image_aff/bg_red.gif) repeat-x;}
+span.online, span.partonline, span.offline{padding:2px 10px;}
+/*********** BANDEAU *********/
+#headerBandeau{background:url(../image_aff/css_bandeauDigitickBg.jpg) repeat-x;height:64px;}
+#headerBandeau #bandeau{background:url(../image_aff/css_bandeauDigitick.jpg) no-repeat;height:64px;text-align:right;}
+#headerBandeau #bandeau #lienSupport{}
+#headerBandeau #bandeau #lienSupport img{border:none;    height:64px;}
+/*********** HEADER **********/
+#header{background:url(../image_aff/css_header_bg.gif) repeat;min-height:39px;padding:5px 20px 0px 20px;font-size:12px;}
+#header .clr{overflow:hidden;    visibility:hidden;    height:0;}
+#header #headerLeft{float:left;    width:45%;}
+#header #headerLeft #headerTitreAdmin{color:white;font-weight:bold;}
+#header #headerLeft #headerLastAccess{font-size:10px;color:#e2017b;padding-top:2px;font-weight:bold;}
+#header #headerLeft #headerLastAccess strong, #header #headerLeft #headerLastAccess em{font-weight:normal;    font-style:normal;}
+#header #headerRight{float:right;width:55%;padding-top:7px;}
+#header #headerRight a{color:#FFFFFF;font-weight:bold;text-decoration:none;font-size:10px;}
+#header #headerRight #headerDeconnecter{float:right;background:url(../image_aff/css_header_disconnect.gif) no-repeat;height:18px;width:77px;_height:31px;_width:100px;padding:3px 0px 0px 23px;cursor:pointer;}
+#header #headerRight #headerRetourAdmin{float:right;background:url(../image_aff/css_header_retourAdmin.gif) no-repeat;height:18px;width:123px;_height:21px;_width:141px;padding:3px 0px 0px 18px;cursor:pointer;margin-right:15px;}
+#header #headerRight #headerSwitchAdmin{float:right;background:url(../image_aff/css_header_switch.gif) no-repeat;height:18px;width:78px;_height:31px;_width:100px;padding:3px 0px 0px 21px;cursor:pointer;margin-right:15px;}
+#header #headerRight #headerArchivage{float:right;background:url(../image_aff/css_header_archives_off.gif) no-repeat;height:18px;width:57px;_height:31px;_width:100px;padding:3px 0px 0px 21px;cursor:pointer;margin-right:15px;}
+#header #headerRight #headerArchivage.on{background:url(../image_aff/css_header_archives_on.gif) no-repeat;}
+#modeArchives{font-family:'Lato',sans-serif;font-size:12px;font-weight:bold;font-style:italic;color:#545454;text-align:center;padding:10px 0px;}
+/************ MENU ***********/
+#menu{clear:left;}
+#menu #menuContent{background:url(../image_aff/css_menu_top_bg.gif) repeat-x;height:50px;text-align:center;}
+#menu #menuContent .menuItem{margin:9px 0px 0px 5px;float:left;}
+#menu #menuContent .menuItem a{font-family:"BebasNeueRegular";font-size:20px;text-decoration:none;color:#bcbcbc;}
+#menu #menuContent .menuItemSmaller a{font-size:18px;    line-height:22px;}
+#menu #menuContent .menuItem .menuItemLeft{background:url(../image_aff/css_onglet_left.gif) no-repeat;cursor:pointer;height:32px;width:4px;float:left;}
+#menu #menuContent .menuItem .menuItemLeftSelected{background:url(../image_aff/css_onglet_left_sel.gif) no-repeat;cursor:pointer;height:32px;width:4px;float:left;}
+#menu #menuContent .menuItem .menuItemContent{background:url(../image_aff/css_onglet.gif) repeat-x;cursor:pointer;height:70px;line-height:70px;float:left;
+/*padding:4px 2px 0px 2px;*/
+}
+#menu #menuContent .menuItem .menuItemContentSelected{background:url(../image_aff/css_onglet_sel.gif) repeat-x;cursor:pointer;height:32px;float:left;padding:4px 5px 0px 5px;color:#FFFFFF;}
+#menu #menuContent .menuItem .menuItemRight{background:url(../image_aff/css_onglet_right.gif) no-repeat;cursor:pointer;height:32px;width:4px;float:left;}
+#menu #menuContent .menuItem .menuItemRightSelected{background:url(../image_aff/css_onglet_right_sel.gif) no-repeat;    cursor:pointer;    height:32px;    width:4px;    float:left;}
+/********* LEFT MENU ********/
+#leftMenu{font-size:11px;font-weight:normal;width:155px;}
+#leftMenuContent{}
+#leftMenu #leftMenuContent .leftMenuSection{background:url(../image_aff/bg_tetieres_roses.gif) repeat-x;color:#FFFFFF;font-weight:bold;text-align:center;padding:5px 0px 0px 0px;height:19px;_height:24px;}
+#leftMenu #leftMenuContent .leftMenuSectionSmaller{font-size:8px;}
+#leftMenu #leftMenuContent .leftMenuItem{background:url(../image_aff/css_menu_left_bt.gif) repeat-x;cursor:pointer;text-align:center;padding:5px 0px 0px 0px;height:22px;_height:27px;}
+#leftMenu #leftMenuContent .leftMenuItemSelected{background:url(../image_aff/css_menu_left_bt_sel.gif) repeat-x;cursor:pointer;text-align:center;padding:5px 0px 0px 0px;height:22px;_height:27px;color:white;}
+#leftMenu #leftMenuContent .leftMenuItemNoLink{cursor:default;}
+#leftMenu #leftMenuContent .leftMenuItemSmaller{font-size:8px;}
+#leftMenu #leftMenuContent a{color:#000000;text-decoration:none;font-weight:bold;font-size:10px;}
+#leftMenu #leftMenuContent #leftMenuBandeauPub{width:155px;
+/*background:url(../image_aff/ordi_digitick_2009.jpg) no-repeat;*/
+}
+/********* HORIZONTAL MENU ********/
+#HorizontalMenuContent{color:#FFFFFF;font-size:10px;font-weight:bold;text-transform:uppercase;list-style:none;padding:5px 5px 0px 5px;_margin:0px;z-index:5000;}
+#HorizontalMenuContent li{color:white;margin:0;padding:0;display:block;float:left;position:relative;_margin:0px;}
+#HorizontalMenuContent li a:link, #HorizontalMenuContent li a:visited{background:url(../image_aff/bg_tetieres_roses.gif) repeat-x;display:block;width:189px;_width:194px;color:white;text-decoration:none;border-left-style:solid;border-right-style:solid;border-top-style:none;border-bottom-style:none;border-width:1px;text-align:center;height:15px;padding:5px 5px 5px 5px;_margin:0px;}
+#HorizontalMenuContent li:hover a, #HorizontalMenuContent li.sfhover a, #HorizontalMenuContent li a:hover{background:url('../image_aff/bg_tetieres_bleues.gif') repeat-x;text-decoration:none;_margin:0px;}
+#HorizontalMenuContent li.HorizontalMenuContentSmaller{font-size:9px;}
+#HorizontalMenuContent li ul.HorizontalSousMenu{list-style:none;position:absolute;cursor:pointer;left:0px;top:23px;_top:21px;padding:1px 1px 0;display:none;_margin:0px;z-index:1000;}
+#HorizontalMenuContent li ul.HorizontalSousMenu .HorizontalSousMenuSmaller{font-size:8px;}
+#HorizontalMenuContent li:hover ul.HorizontalSousMenu,#HorizontalMenuContent li.sfhover ul.HorizontalSousMenu{display:block;_margin:0px;}
+#HorizontalMenuContent li ul.HorizontalSousMenu li{width:190px;color:#000;clear:left;border-style:none;_margin:0px;_height:25px;}
+#HorizontalMenuContent li ul.HorizontalSousMenu li a:link, #HorizontalMenuContent li ul.HorizontalSousMenu li a:visited{background:url(../image_aff/css_menu_left_bt.gif) repeat-x;clear:left;color:#000;border-style:none;position:relative;_height:25px;}
+#HorizontalMenuContent li ul.HorizontalSousMenu li:hover a, #HorizontalMenuContent li ul.HorizontalSousMenu li.sfhover a, #HorizontalMenuContent li ul.HorizontalSousMenu li a:active, #HorizontalMenuContent li ul.HorizontalSousMenu li a:hover{background:url(../image_aff/css_menu_left_bt_sel.gif) repeat-x;color:white;}
+#HorizontalMenuContent li ul.HorizontalSousMenu li ul.HorizontalSousSousMenu{display:none;_margin:0px;font-size:10px;list-style:none;position:absolute;left:199px;_left:193px;top:-1px;padding:1px 1px 0 1px;}
+#HorizontalMenuContent li ul.HorizontalSousMenu li ul.HorizontalSousSousMenu .HorizontalSousSousMenuSmaller{font-size:8px;}
+#HorizontalMenuContent li ul.HorizontalSousMenu li:hover ul.HorizontalSousSousMenu, #HorizontalMenuContent li ul.HorizontalSousMenu li.sfhover ul.HorizontalSousSousMenu{display:block;}
+ul#HorizontalMenuContent li ul.HorizontalSousMenu li ul.HorizontalSousSousMenu li a:link, ul#HorizontalMenuContent li ul.HorizontalSousMenu li ul.HorizontalSousSousMenu li a:visited{background:url(../image_aff/css_menu_left_bt.gif) repeat-x;clear:left;color:#000;}
+ul#HorizontalMenuContent li ul.HorizontalSousMenu li ul.HorizontalSousSousMenu li:hover a, ul#HorizontalMenuContent li ul.HorizontalSousMenu li ul.HorizontalSousSousMenu li a:hover, ul#HorizontalMenuContent li ul.HorizontalSousMenu li ul.HorizontalSousSousMenu li a:active{background:url(../image_aff/css_menu_left_bt_sel.gif) repeat-x;_margin:0px;color:white;}
+/******************************/
+/*    Formulaires  */
+/******************************/
+.formBloc{margin:0 0 8px 0;clear:both;}
+.formBloc .formFull{text-align:center;}
+.formCenter{float:left;width:196px;}
+.formBloc .formLeft{float:left;width:50%;_width:45%;text-align:right;font-weight:bold;clear:left;}
+.formBloc .formSpacer{width:10px;float:left;}
+.formBloc .formRight{float:left;text-align:left;margin-bottom:5px;_margin-bottom:0px;width:50%;}
+.formBloc .digiOnly{font-style:italic;margin-left:10px;color:gray;}
+.formBloc .formDetail{font-style:italic;color:gray;font-weight:normal;margin-left:10px;}
+.formBloc label{margin-left:5px;}
+.formSep .formLeft{margin-right:1%;    width:49%;    color:grey;    font-weight:normal;}
+.formSep .formRight{width:40%;}
+.formBloc.empty{opacity:0.5;}
+/*Formulaire de date Spécial:*/
+.formBloc.formDate2{line-height:30px; }
+.formBloc.formDate .formLeft,.formBloc.formDate2 .formLeft{width:30px; text-align:left; font-weight:normal; }
+.formBloc.formDate .formRight,.formBloc.formDate2 .formRight{width:auto; }
+.formBloc.formDate2 select,.formBloc.formDate select{width:auto!important; }
+.dp-choose-date img{vertical-align:middle; }
+/******************************/
+#location{   font-size:11px;    font-weight:normal;    margin:0 5px 5px;}
+#location a{color:#E2017B;    font-weight:bold;    text-decoration:none;}
+#location a:hover{color:#000;    text-decoration:underline;}
+#contentLogin{border:1px solid #ccc;}
+.tooltipAbonnement{display:block;margin:5px 0px;color:#E2017B;cursor:pointer;}
+.tooltipNoAbonnement{display:block;margin:5px 0px;color:#E2017B;}
+#tooltip.tooltipAbonnement{width:200px;text-align:center;font-size:10px;}
+#tooltip.tooltipAbonnement h3{}
+/**************************************************/
+.tooltipZone{display:block;    cursor:pointer;}
+#tooltip.tooltipZone{text-align:center;    font-size:10px;    padding:5px;}
+#tooltip.tooltipZone .body{padding:5px;}
+#tooltip.tooltipZone .zone{text-align:center;    font-size:11px;    padding:5px 0px 0px;    text-align:left;}
+#tooltip.tooltipZone .date{text-align:center;    font-size:10px;    padding:0 0 0 10px;    text-align:left;}
+#tooltip.tooltipZone h3{display:none;}
+/**************************************************/
+#formBlocsubmit{float:left;    margin:0 0 0 80px !important;    clear:none;}
+#formBlocreset{clear:none;}
+#remarques{font-size:11px;}
+.p112 #remarques{display:block;text-align:center;background:white;padding-bottom:5px;}
+.datasport{background:url('../commun/images/sybiex/datasport.gif') no-repeat;}
+.isybill{background:url('../commun/images/sybiex/isybill.gif') no-repeat;}
+.rodrigue{background:url('../commun/images/sybiex/rodrigue.gif') no-repeat;}
+.ticketnet{background:url('../commun/images/sybiex/ticketnet.gif') no-repeat;}
+.ticketnet2{background:url('../commun/images/sybiex/ticketnet2.gif') no-repeat;}
+.satori{background:url('../commun/images/sybiex/satori.gif') no-repeat;}
+.aparte{background:url('../commun/images/sybiex/aparte.gif') no-repeat;}
+.satoriEvenement{background:url('../commun/images/sybiex/satori.gif') no-repeat center 13px;}
+.secutix{background:url('../commun/images/sybiex/secutix.gif')  no-repeat center 13px !important;}
+/* Éléments de formulaires pour les dates (relativeDate,etc...) */
+.timeIsRelative{display:inline;    margin:0;    padding:0;}
+.timeIsRelative input, .timeIsRelative label span{display:none;}
+.offsetFieldset .timeIsRelative label{display:inline-block;    width:19px;    height:19px;    background:transparent url(../image_aff/bt_lier.gif) scroll no-repeat center -19px;    padding:0;}
+.offsetFieldset .timeIsRelative.active label{background-position:center 0;}
+/* Styles pour ADMIN_Zone */
+.zoneHeader{clear:left;    margin:0; padding:0;    text-align:left;    color:#fff;    text-transform:uppercase;font-weight:bold;    font-size:11px;}
+.zoneHeader .toggleDisplay{float:right;    margin:0;    margin-right:15px;    border-width:0;    height:14px;    line-height:14px;    background:transparent url(../image_aff/ico_flecheHautBas.gif) no-repeat right center;    cursor:pointer;    padding:0;    padding-right:14px;    color:#5D5D5D;    text-decoration:none;    text-transform:none;    font-weight:bold;    font-size:11px;}
+.zoneHeader .toggleDisplay.hover{text-decoration:underline;}
+.zoneHeader .toggleDisplay.show{background-position:right -10px;}
+.zoneHeader .toggleDisplay.hide{background-position:right 2px;}
+.zoneHeader .clearer{clear:both;}
+.zoneHeader br.clearer{line-height:0;    height:0;}
+.zoneBody{border:1px solid #ccc;    background:#cdc9cb url(../image_aff/bg_event_a_laffiche.gif) repeat-x scroll 0 0;    padding:3px 10px;}
+/* ------------- */
+#pendingActionsZone .zoneBody{background:#CDC9CB url(../image_aff/bg_event_a_laffiche.gif) repeat-x scroll 0 0;}
+#pendingActions{font-size:12px;}
+#pendingActions, #pendingActions ul{margin:0;    list-style-type:none;    padding:0;}
+#pendingActions strong{
+/* Cachage des entêtes des sections */
+display:none;}
+#pendingActions .report{font-size:11px;    margin-left:10px;}
+#pendingActions .report strong{
+/* Affichage des éventuels <strong /> présents dans les messages de rapport */
+display:inline;}
+#pendingActions ul li label{font-weight:bold;}
+#pendingActions ul li.pending label{font-weight:normal;}
+#pendingActions ul li.success label{color:#2c2;}
+#pendingActions ul li.warning label{color:#cc6622;}
+#pendingActions ul li.error label{color:#c22;}
+#pendingActions ul li.archived label{font-weight:normal;    font-size:10px;}
+.smartied{background:#FFF repeat fixed;    margin:0;    padding:0;    text-align:center;}
+.smartied #mainTable, .smartied #copyright{margin:auto;}
+.smartied #copyright{width:764px;}
+.smartied #mainTable{border:none;    border-collapse:collapse;    border-spacing:0;    width:1024px;    text-align:left;}
+.smartied #mainTable td{margin:0;    padding:0;}
+.smartied .headerTable{width:100%;    border:none;    border-collapse:collapse;}
+.smartied #adminBody{border:none;    border-collapse:collapse;    border-spacing:0;    width:867px;    height:100%;}
+.smartied #location{padding-left:5px;}
+.smartied #leftMenu #leftMenuContent .leftMenuItem{display:block;}
+.smartied #leftMenu #leftMenuContent ul{margin:0;    padding:0;}
+.smartied #leftMenu #leftMenuContent ul li{list-style-type:none;    height:auto;    margin:0;    padding:0;}
+.smartied #leftMenu #leftMenuContent ul li strong{display:block;}
+.smartied #copyright{text-align:right;}
+.smartied #copyright img{width:211px;    padding-right:10px;    text-transform:uppercase;    font-size:8px;}
+.smartied #bodyTable{border:1px solid #ccc;     border-collapse:collapse;     border-spacing:0;     width:100%;}
+.smartied #bodyTable th, .smartied #bodyTable td{padding:0;}
+#blocAdmin .cartoucheVenteNew{color:#757575;    text-align:center;    border:1px #757575 solid;    float:left;}
+#blocAdmin .cartoucheVenteBlockNew{float:left;}
+#blocAdmin .cartoucheVenteNew .cartoucheVenteTitleNew{display:block;    text-transform:uppercase;    color:#fff;    font-size:8px;    background:#757575;    padding:0 3px;}
+#blocAdmin .cartoucheVenteNew .cartoucheVenteContentNew{display:block;    font-weight:normal;    font-size:10px;    color:#000;    background:url('../image_aff/css_cartoucheVente.gif') repeat-x;    height:15px;    padding:0 3px;}
+#blocAdmin .cartoucheVenteNew .cartoucheVenteContentNew.reserved{border:1px dotted #666;    border-top:none;    border-bottom:none;}
+#blocAdmin .cartoucheVenteNew .cartoucheVenteContentNew.quotaVendu{background:url('../image_aff/css_cartoucheVente2.gif') repeat-x;}
+#blocAdmin .cartoucheVenteNew .cartoucheVenteContentNew.quotaVendu.reserved{border:1px dotted #666;    border-top:none;    border-bottom:none;}
+#blocAdmin .cartoucheVenteNew .cartoucheVenteContentNew span{display:block;    font-weight:bold;    color:#000;    padding:0 2px;}
+.lienAideSurLigne{margin-top:-15px;    margin-right:10px;    float:right;}
+.linkHelp{cursor:pointer;    background:url('../image_aff/icone-aide.png') no-repeat center center !important;    width:16px;    height:23px;    display:inline-block;}
+.decalageDroite{margin-right:10px;}
+.paddingTop{padding:7px 0 0 0;}
+.marginTop{margin-top:4px;}
+.marginLeft{margin-left:10px;}
+.zoneHeader .decalageDroite{margin-right:10px !important;}
+.zoneHeader .linkHelp{padding:7px 0 0 0 !important;}
+#adminBody #tresorerieXls{background:url("../image_aff/ico_excel.png") no-repeat scroll center top transparent;    cursor:pointer;    float:right;    margin:0 auto;    padding-top:46px;    text-align:center;    width:85px;}
+#zoneReservoirs_table .canalDeVenteRow th{width:100%;}
+#adminContent{border-collapse:collapse;    min-height:100%;    min-width:1024px;    display:block;}
+#location{margin:0;}
+#adminBodyContainer{padding:0px;    width:85%;}
+.bat{width:1024px;}
+#contentMail_parent{width:845px !important;}
+#contentMail_parent #contentMail_tbl{width:845px !important;    margin:0 20%;}
+#contentMail_parent #contentMail_tbl .mceFirst, #contentMail_parent #contentMail_tbl .mceLast{width:845px !important;    padding-top:10px;}
+#ResEvts{font-family:Courier New;}
+.noResult{text-align:center;    padding:15px;    font-size:12px;}
+.csvImport{font-size:12px;}
+.csvImport .listeErreurs{color:#C10505;}
+.csvImport .importOk{color:#E30B7E;font-weight:bold;}
+
+
+
+
+/*XXXXXXXXXXXXXXX
+
+ ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄
+▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌▐░░░░░░░░░░▌
+▐░█▀▀▀▀▀▀▀▀▀ ▐░█▀▀▀▀▀▀▀█░▌▐░█▀▀▀▀▀▀▀▀▀ ▐░█▀▀▀▀▀▀▀█░▌
+▐░▌          ▐░▌       ▐░▌▐░▌          ▐░▌       ▐░▌
+▐░█▄▄▄▄▄▄▄▄▄ ▐░█▄▄▄▄▄▄▄█░▌▐░█▄▄▄▄▄▄▄▄▄ ▐░▌       ▐░▌
+▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌▐░▌       ▐░▌
+▐░█▀▀▀▀▀▀▀▀▀ ▐░█▀▀▀▀█░█▀▀ ▐░█▀▀▀▀▀▀▀▀▀ ▐░▌       ▐░▌
+▐░▌          ▐░▌     ▐░▌  ▐░▌          ▐░▌       ▐░▌
+▐░▌          ▐░▌      ▐░▌ ▐░█▄▄▄▄▄▄▄▄▄ ▐░█▄▄▄▄▄▄▄█░▌
+▐░▌          ▐░▌       ▐░▌▐░░░░░░░░░░░▌▐░░░░░░░░░░▌
+ ▀            ▀         ▀  ▀▀▀▀▀▀▀▀▀▀▀  ▀▀▀▀▀▀▀▀▀▀
+
+
+ XXXXXXXXXXXXXXXXXXXXX*/
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+
+/*XXX
+
+ _______  _______  _        _______  _______  _       __________________ _______  _______
+(  ____ \(  ____ \( (    /|(  ____ )(  ___  )( \      \__   __/\__   __/(  ____ \(  ____ \
+| (    \/| (    \/|  \  ( || (    )|| (   ) || (         ) (      ) (   | (    \/| (    \/
+| |      | (__    |   \ | || (____)|| (___) || |         | |      | |   | (__    | (_____
+| | ____ |  __)   | (\ \) ||     __)|  ___  || |         | |      | |   |  __)   (_____  )
+| | \_  )| (      | | \   || (\ (   | (   ) || |         | |      | |   | (            ) |
+| (___) || (____/\| )  \  || ) \ \__| )   ( || (____/\___) (___   | |   | (____/\/\____) |
+(_______)(_______/|/    )_)|/   \__/|/     \|(_______/\_______/   )_(   (_______/\_______)
+
+
+ XXXX*/
+@font-face{font-family:'Lato';  font-style:normal;  font-weight:400;  src:local('Lato Regular'),local('Lato-Regular'),url(https://fonts.gstatic.com/s/lato/v11/1YwB1sO8YE1Lyjf12WNiUA.woff2) format('woff2');}
+@font-face{font-family:'Montserrat';    font-style:normal;    font-weight:400;    src:local('Montserrat-Regular'),url(https://fonts.gstatic.com/s/montserrat/v6/zhcz-_WihjSQC0oHJ9TCYPk_vArhqVIZ0nv9q090hN8.woff2) format('woff2');  }
+@font-face{font-family:'Open Sans';    font-style:normal;    font-weight:400;    src:local('Open Sans'),local('OpenSans'),url(https://fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3VtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');    unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2212,U+2215,U+E0FF,U+EFFD,U+F000;  }
+
+/*XXX
+
+ ______   _______  _______  _______  _______
+(  ___ \ (  ___  )(  ____ \(  ____ \(  ____ \
+| (   ) )| (   ) || (    \/| (    \/| (    \/
+| (__/ / | (___) || (_____ | (__    | (_____
+|  __ (  |  ___  |(_____  )|  __)   (_____  )
+| (  \ \ | (   ) |      ) || (            ) |
+| )___) )| )   ( |/\____) || (____/\/\____) |
+|/ \___/ |/     \|\_______)(_______/\_______)
+
+
+ XXXX*/
+html{margin:0;padding:0;  height:100%;  box-sizing:border-box;}
+*,*:before,*:after{box-sizing:inherit;}
+body{margin:0;padding:0;min-height:100%;font-family:'Lato';color:#5D5D5D;
+/* Optimisation des polices pour la lecture (et non les performances) */
+text-rendering:optimizeLegibility;
+/* Règlages propres au moteur Webkit */
+/* Empêche le navigateur de redimensionner les      * petites polices */
+-webkit-text-size-adjust:none;    -webkit-font-smoothing:antialiased;
+/* Règlages propres à Firefox Mac Os X (aliasing) */
+-moz-osx-font-smoothing:grayscale;}
+
+a{
+color: #E6007E;
+text-transform: none;
+transition: 0.4s all ease-in-out;
+}
+a:hover{
+color: #333;
+text-transform: none;
+}
+
+input[type="text"],input#duree_j, input[type="password"], .ui-multiselect-filter input,
+.config_editor_form table tbody tr td.quantite input,
+.p312 #tarifs #tarifsFiltres .tarifsContent span input, 
+.zoneLT_listeTarifs table td.zoneLT_listLimitation input,#blocAdmin .datepick {
+    background-color: #F5F5F5;
+    -webkit-transition: .3s background-color;
+    -o-transition: .3s background-color;
+    transition: .3s background-color;
+    font-family: "Lato";
+    width: auto;
+    height: 34px!important;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  vertical-align: middle;
+}
+input:focus, textarea:focus,.config_editor_form table tbody tr td.quantite input:focus,
+input#duree_j:focus, .p312 #tarifs #tarifsFiltres .tarifsContent span input:focus,
+.zoneLT_listeTarifs table td.zoneLT_listLimitation input:focus {
+    outline: none;
+    background: white;
+}
+
+input[type='checkbox'] {
+  vertical-align: middle;
+  background-color: transparent;
+  border: 1px solid #B1B1B1;
+  width: 16px;
+  height: 16px;
+  border-radius: 5px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-transition: .3s background-color;
+  -o-transition: .3s background-color;
+  transition: .3s background-color;
+  position: relative;
+  top: 1px;
+  margin-right: 2px;
+  cursor: pointer;
+}
+input[type=checkbox]:after {
+    font-family: 'FontAwesome';
+    font-size: 12px;
+    position: relative;
+    margin-right: 10px;
+    content: "\f00c";
+    left: 1px;
+    color: #FFFFFF;
+}
+input[type=checkbox]:hover, input[type=checkbox]:checked {
+    cursor: pointer;
+    background-color: #A9A9A9;
+}
+
+
+
+select, .config_editor_form table select, .config_editor_form table .ui-multiselect,
+ .config_editor_form table .ui-multiselect-menu {
+    background-color: #F5F5F5;
+    font-family: "Lato";
+    width: auto;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    vertical-align: middle;
+}
+textarea{
+    background-color: #F5F5F5;
+    -webkit-transition: .3s background-color;
+    -o-transition: .3s background-color;
+    transition: .3s background-color;
+    font-family: "Lato";
+    width: auto;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    resize: vertical;
+    vertical-align: middle;
+}
+
+label {
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    vertical-align: middle;
+}
+ul{
+	list-style: none;
+}
+/******
+
+ ______   _______          _________ _______  _        _______
+(  ___ \ (  ___  )|\     /|\__   __/(  ___  )( (    /|(  ____ \
+| (   ) )| (   ) || )   ( |   ) (   | (   ) ||  \  ( || (    \/
+| (__/ / | |   | || |   | |   | |   | |   | ||   \ | || (_____
+|  __ (  | |   | || |   | |   | |   | |   | || (\ \) |(_____  )
+| (  \ \ | |   | || |   | |   | |   | |   | || | \   |      ) |
+| )___) )| (___) || (___) |   | |   | (___) || )  \  |/\____) |
+|/ \___/ (_______)(_______)   )_(   (_______)|/    )_)\_______)
+
+
+ ******/
+
+
+/****** STYLES COMMUNS DES BOUTONS ******/
+
+
+/* Sytles communs boutons */
+span.ventesTerminees, span.unknown,span.offline,span.partonline,.btn_table .online_icon+td, .btn_table .offline_icon+td,.rgp_bloc_left button, #btnAjoutlieu, .btHelp,.btNewRgp,.fakeButton a, #btnNouvelleListe,#dgt-digidocs_body #digiOnglet button.add,a.submit01,.submit01,#blocAdmin input.submit01,#formBlocImage #aTickboxImageEvt,#blocAdmin .boxAdmin2 #rechercheEvt .submit01,a.afficheMasque,#addReductionButton,#blocAdmin .boxAdmin2 .boutonNouveau, #blocAdmin input.btOk,#addScanZone .submit, #blocAdmin #boxAdminRecherche .recherche .submit01,#parcourirUpload,#realupload,
+#blocAdmin .boxAdmin .afficheResultat tr.tableFooter span.online, #blocAdmin .boxAdmin .afficheResultat .listeDetail input[type="submit"],
+ #blocAdmin .boxAdmin .afficheResultat .listeDetail input[value="Annuler"], .config_editor_form table .new button,
+ .p212 .ui-dialog .ui-dialog-buttonpane button, #blocAdmin .boxAdmin2 #etatEvenement span, #blocAdmin #exportsZone_body #validExport,
+ .adminAlert #popup_panel input, .adminAlert #popup_panel button, .p312 #tarifs #tarifsFiltres .tarifsContent a,
+ .p316 tr td.txt01 a, .p312 #tarifs #tarifsDetail .tarifsContent a#ajoutTarif, .p326 #zoneRS_reset,
+ .p326 .zoneRS_zone .zoneRS_applySelection, #boutonSelectionTarifs.boutonNouveau, #zoneLT_enregistrer.submit01,
+ .p326 .zoneLT_listeTarifs #zoneLT_enregistrer, .p326 #zoneReservoirs button.refresh, 
+ .p326 #zoneReservoirs .editorSectionSubmit button,#blocAdmin .boxAdmin2 #etatRepresentation span,
+ #blocAdmin .boxAdmin2 #etatRepresentation .tabs li a, .p392 #zoneReservoirs button.refresh,.p392 #zonePaniers+.txtCenter a,
+  .p392 #zonePaniers button.refresh, .p332 .ui-button, .p362 tr:nth-child(14) .txt01 a, 
+  .p364 tr .txt01 a, .p474 #recherche_body #validDate, .p474 #recherche_body #validRecherche, 
+.p474 #actionsZone_body #validAction, #blocAdmin .boxAdmin2 #fenetreEtat .bt,.p372 .txt01 a,
+.p484 #recherche_body #validRecherche, .p484 #actionsZone_body #validAction,.p462 input#inputvalider,
+input[value="ok"],.p466 .txt01 >a, .p470 button,.formFull a.btn,.btn.btn-success,
+#blocSelectDates #selectionnerDates, #liste button,#blocMiseEnVente #miseEnVenteButton
+ {
+    display: inline-block;
+    font-family: "latoregular",sans-serif!important;
+    font-weight: 700;
+    padding: 5px 15px;
+    transition: color 0.3s ease 0s, background 0.3s ease 0s, border-color 0.3s ease 0s;
+    -moz-user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 1.42857;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    color: white;
+    height:auto;
+    width:auto;
+    text-shadow:none;
+    text-transform: lowercase;
+}
+
+/* Sytles par défaut boutons */
+.fakeButton a, .fakeButton a, #btnNouvelleListe, #dgt-digidocs_body #digiOnglet button.add,a.submit01,.submit01,#blocAdmin input.submit01,#formBlocImage #aTickboxImageEvt,#blocAdmin .boxAdmin2 #rechercheEvt .submit01,a.afficheMasque,#addReductionButton,#blocAdmin .boxAdmin2 .boutonNouveau, #blocAdmin input.btOk,#addScanZone .submit, #blocAdmin #boxAdminRecherche .recherche .submit01,#parcourirUpload,#realupload {
+    background-color: #fff;
+    border-color: #ccc;
+    color: #333;
+}
+
+
+/* Bouton Action  */
+ #blocAdmin .boxAdmin .afficheResultat .listeDetail input[type="submit"],.rgp_bloc_left button, .btHelp,.btNewRgp, #btnNouvelleListe,.btOk,#dgt-digidocs_body #digiOnglet button.add,a.submit01,.submit01,#blocAdmin input.submit01,#formBlocImage #aTickboxImageEvt,#blocAdmin .boxAdmin2 #rechercheEvt .submit01,a.afficheMasque,#addReductionButton,#blocAdmin .boxAdmin2 .boutonNouveau, #blocAdmin input.btOk,#addScanZone .submit, #blocAdmin #boxAdminRecherche .recherche .submit01,#parcourirUpload,#realupload
+ , .config_editor_form table .new button, .p212 .ui-dialog .ui-dialog-buttonpane button:first-child, #blocAdmin #exportsZone_body #validExport,
+  #blocAdmin .boxAdmin2 .boutonNouveau,
+  .p312 #tarifs #tarifsFiltres .tarifsContent a, .p312 #tarifs #tarifsDetail .tarifsContent a#ajoutTarif,
+  .p326 .zoneRS_zone .zoneRS_applySelection, #boutonSelectionTarifs.boutonNouveau, #zoneLT_enregistrer.submit01,
+   .p326 .zoneLT_listeTarifs #zoneLT_enregistrer, .p326 #zoneReservoirs button.refresh, 
+   .p326 #zoneReservoirs .editorSectionSubmit button, .p392 #zoneReservoirs button.refresh,
+   .p392 #zonePaniers+.txtCenter a, .p392 #zonePaniers button.refresh, .p332 .ui-button,
+   .p362 tr:nth-child(14) .txt01 a, .p364 tr .txt01 a, .p474 #recherche_body #validDate,
+   .p474 #recherche_body #validRecherche ,.p474 #actionsZone_body #validAction,
+   #blocAdmin .boxAdmin2 #fenetreEtat .bt[type="submit"],
+   .adminAlert #popup_panel input#popup_ok,.p372 .txt01 >a,
+   .p484 #recherche_body #validRecherche, .p484 #actionsZone_body #validAction,.p462 input#inputvalider
+   ,input[value="ok"],.p466 .txt01 >a,.p470 button,.btn.btn-success, #blocSelectDates #selectionnerDates,
+   #liste button,#blocMiseEnVente #miseEnVenteButton
+     {
+    background: #e6007e none repeat scroll 0 0;
+    border-color: #e6007e;
+    color: #fff;
+}
+
+/* Bouton modification  */
+#btnAjoutlieu, .p1802 .fakeButton a  {
+    background-color: #616161;
+    border-color: #616161;
+    color: #fff;
+}
+
+
+.btn-success,.btn_table .online_icon+td, span.partonline,#blocAdmin .boxAdmin .afficheResultat tr.tableFooter span.online,
+#blocAdmin .boxAdmin2 #etatEvenement span,#blocAdmin .boxAdmin2 #etatRepresentation p span{
+    background: #86c11b none repeat scroll 0 0;
+    border-color: #86c11b;
+}
+
+.btn-info, #blocAdmin .boxAdmin2 #etatRepresentation .tabs li a{
+    background: #44a2d4 none repeat scroll 0 0;
+    border-color: #44a2d4;
+}
+
+.btn-warning,.btn_table .offline_icon+td,span.offline, #blocAdmin .boxAdmin2 #etatEvenement span.offline {
+    background: #ff7141 none repeat scroll 0 0;
+    border-color: #ff7141;
+}
+
+.btn-danger {
+    background: #e6003b none repeat scroll 0 0;
+    border-color: #e6003b;
+}
+
+.btn-cancel,.p316 tr td.txt01 a, .p212 .ui-dialog .ui-dialog-buttonpane button:last-child,span.ventesTerminees, span.unknown,
+ #blocAdmin .boxAdmin .afficheResultat .listeDetail input[value="Annuler"],
+ .adminAlert #popup_panel button, .p326 #zoneRS_reset,
+ #blocAdmin .boxAdmin2 #fenetreEtat .bt[value="Annuler"] ,.adminAlert #popup_panel button,
+ .formFull a.btn,#liste button#effacerJourneeType {
+    background: #909090 none repeat scroll 0 0;
+    border-color: #909090;
+}
+.btn-cancel:hover, .p326 #zoneRS_reset:hover, span.ventesTerminees:hover, span.unknown:hover,
+  #blocAdmin .boxAdmin .afficheResultat .listeDetail input[value="Annuler"]:hover
+ , #blocAdmin .boxAdmin2 #fenetreEtat .bt[value="Annuler"]:hover, .adminAlert #popup_panel button:hover,
+ .formFull a.btn:hover,#liste button#effacerJourneeType:hover {
+    background: #333 none repeat scroll 0 0;
+    border-color: #333;
+}
+.btn-link,#blocAdmin .boxAdmin .afficheResultat tr.tableFooter a.lienDetail,
+#blocAdmin .boxAdmin .afficheResultat tr.tableFooter a.lienDetail.masquer,
+#blocAdmin .boxAdmin .afficheResultat tr.tableFooter a.lienDetail.afficher,
+.txt01B a {
+    color: #e6007e;
+    font-size: 14px;
+    text-transform: none;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+}
+.btn-link:hover,#blocAdmin .boxAdmin .afficheResultat tr.tableFooter a.lienDetail.afficher:hover,
+.txt01B a:hover{
+    color: #333;
+}
+
+.rgp_bloc_left button:hover, #btnAjoutlieu:hover,.btHelp:hover,.btNewRgp:hover,
+.fakeButton a:hover,.p326 .zoneRS_zone .zoneRS_applySelection:hover,
+.btOk:hover,
+#btnNouvelleListe:hover,
+#dgt-digidocs_body #digiOnglet button.add:hover, a.submit01:hover, .submit01:hover,
+#blocAdmin input.submit01:hover,
+#formBlocImage #aTickboxImageEvt:hover,
+#blocAdmin .boxAdmin2 #rechercheEvt .submit01:hover, a.afficheMasque:hover,
+#addReductionButton:hover,
+#blocAdmin .boxAdmin2 .boutonNouveau:hover,
+#blocAdmin input.btOk:hover,
+#addScanZone .submit:hover,
+#blocAdmin #boxAdminRecherche .recherche .submit01:hover,
+#parcourirUpload:hover,
+#realupload:hover, #blocAdmin .boxAdmin .afficheResultat .listeDetail input[type="submit"]:hover,
+.config_editor_form table .new button:hover, .p212 .ui-dialog .ui-dialog-buttonpane button:hover,
+#blocAdmin #exportsZone_body #validExport:hover,.adminAlert #popup_panel input:hover,  
+.p312 #tarifs #tarifsFiltres .tarifsContent a:hover,.p316 tr td.txt01 a:hover,
+.p312 #tarifs #tarifsDetail .tarifsContent a#ajoutTarif:hover,
+ .p326 .zoneRS_zone .zoneRS_applySelection.disabled, #boutonSelectionTarifs.boutonNouveau:hover
+ , #zoneLT_enregistrer.submit01,  .p326 .zoneLT_listeTarifs #zoneLT_enregistrer:hover,
+  .p326 #zoneReservoirs button.refresh:hover, .p326 #zoneReservoirs .editorSectionSubmit button:hover,
+  #blocAdmin .boxAdmin2 #etatRepresentation .tabs li a:hover, .p392 #zoneReservoirs button.refresh:hover,
+  .p392 #zonePaniers+.txtCenter a:hover, .p392 #zonePaniers button.refresh:hover, .p332 .ui-button:hover,
+  .p362 tr:nth-child(14) .txt01 a:hover, .p364 tr .txt01 a:hover, .p474 #recherche_body #validDate:hover,
+  .p474 #recherche_body #validRecherche :hover,.p474 #actionsZone_body #validAction:hover,
+  #blocAdmin .boxAdmin2 #fenetreEtat .bt[type="submit"]:hover,.adminAlert #popup_panel input#popup_ok:hover,
+  .p372 .txt01 >a:hover,.p484 #recherche_body #validRecherche:hover,
+   .p484 #actionsZone_body #validAction:hover,.p462 input#inputvalider:hover,input[value="ok"]:hover
+   ,.p466 .txt01 >a:hover,.p470 button:hover,.btn.btn-success:hover, 
+   #blocSelectDates #selectionnerDates:hover,#liste button:hover,#blocMiseEnVente #miseEnVenteButton:hover
+  {
+    background: #333 none repeat scroll 0 0;
+    border-color: #333;
+    color: #fff;
+    transition: all 200ms ease-in-out 0s;
+}
+
+
+/* Bouton Modifier */
+.p1802 .fakeButton a:before {
+    content: "\f013";
+    font-family:"FontAwesome";
+    position:relative;
+    margin-right:10px;
+
+}
+
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX BOUTONS SPECIFIQUES XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+
+
+/* ------------------------------- ENVOYER INVITATION -------------------------------------------*/
+td.txt01 blockquote a span{
+    display: inline-block;
+    font-family: "latoregular",sans-serif!important;
+    font-weight: 700;
+    padding: 5px 15px;
+    transition: color 0.3s ease 0s, background 0.3s ease 0s, border-color 0.3s ease 0s;
+    -moz-user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 1.42857;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    color: white!important;
+    height:auto;
+    width:auto;
+    background: #e6007e none repeat scroll 0 0!important;
+    border-color: #e6007e;
+    color: #fff;
+}
+td.txt01 blockquote a span:hover
+{
+    background: #333 none repeat scroll 0 0!important;
+    border-color: #333;
+    color: #fff;
+    transition: all 200ms ease-in-out 0s;
+}
+.p372 .txt01 a img, .p466 .txt01 a img{
+	visibility: hidden;
+}
+.p372 .txt01 >a,.p466 .txt01 >a{
+	display: block;
+	width: 75px;
+	margin: 0 auto;
+	position: relative;
+}
+.p372 .txt01 >a:before,.p466 .txt01 >a:before{
+	content: "Retour";
+	font-family: "latoregular",sans-serif!important;
+    font-size: 14px;
+    color: white;
+    position: absolute;
+    top: 20%;
+    left: 19%;
+}
+/*XXX
+
+ _        _______           _______          _________
+( \      (  ___  )|\     /|(  ___  )|\     /|\__   __/
+| (      | (   ) |( \   / )| (   ) || )   ( |   ) (
+| |      | (___) | \ (_) / | |   | || |   | |   | |
+| |      |  ___  |  \   /  | |   | || |   | |   | |
+| |      | (   ) |   ) (   | |   | || |   | |   | |
+| (____/\| )   ( |   | |   | (___) || (___) |   | |
+(_______/|/     \|   \_/   (_______)(_______)   )_(
+
+
+ XXX*/
+body > table{display:table;  min-width:100% !important;    height:100%;  margin:0;    background-color:#ECF0F1;  }
+/* Largeur table 100% */
+.adminBodyContent .zoneBody  table,#blocAdmin,#blocAdmin #evenementChampsRequis{display:table;    width:100%;    margin:0;    font-family:'Lato';    }
+#adminBody{width:100%;padding:20px;border-collapse: separate;}
+
+#adminContent {display:table;    width:100%;    margin:0;    font-family:'Lato';    }
+
+/****** DIV 100% ******/
+#blocAdmin #boxRecherche.boxAdmin2,#blocAdmin .boxAdmin,#blocAdmin .boxAdmin .boxAdmin2,
+#blocAdmin .boxAdmin2,#blocAdmin #pagination.boxAdmin2,#listeRep,.largeurFull,
+#blocAdmin #boxAdminReporting,#blocAdmin .boxAdmin2 #responsableBilletterie,#blocAdmin .boxAdmin2 #divers
+,#blocAdmin .boxAdmin2 #contactOrganisateur,#jt_newTemplate_body,#blocAdmin .boxAdmin2 .tarifsDisponibles
+,#blocAdmin .boxAdmin2 #groupesDisponibles,#blocAdmin .boxAdmin2 #representation,#blocEvenement,
+#recherche,.zoneLB_listeBillets,.pagination,#actionsZone,#exportsZone,#blocEvenement #blocEvenement_body,
+#recherche_body,.zoneLB_listeBillets .zoneBody,#exportsZone #exportsZone_body, .p474 #blocEvenement,
+ .p474 #recherche_body, .p474 .zoneLB_listeBillets .zoneBody
+{width:100%;    padding:0;    margin:0;    border:none;    }
+#blocAdmin{background:white;width:100%!important;text-align:left;}
+
+/*  largeur div 50%;*/
+.formBloc .formLeft, .formBloc .formRight{width:50%;    }
+
+
+/******
+
+___________________________ _______  _______  _______    __
+\__   __/\__   __/\__   __/(  ____ )(  ____ \(  ____ \  /  \
+   ) (      ) (      ) (   | (    )|| (    \/| (    \/  \/) )
+   | |      | |      | |   | (____)|| (__    | (_____     | |
+   | |      | |      | |   |     __)|  __)   (_____  )    | |
+   | |      | |      | |   | (\ (   | (            ) |    | |
+   | |   ___) (___   | |   | ) \ \__| (____/\/\____) |  __) (_
+   )_(   \_______/   )_(   |/   \__/(_______/\_______)  \____/
+
+
+ ******/
+
+#blocAdmin #titleAdmin, .zoneHeader, .titleAdmin, #blocAdmin .headerBoxAdmin {
+ background:none #FFF;
+ font-size:24px;
+ text-transform:uppercase;
+ color:#5D5D5D;
+ border-bottom:1px solid #E0E0E0;
+ /*line-height:auto;*/
+ padding:0 0 10px;
+ width:100%;
+ margin-bottom:20px;
+ font-weight: normal;
+ height: auto;
+ margin-top: 0;
+ font-family:'Montserrat';
+ }
+
+/******
+
+___________________________ _______  _______  _______    _______
+\__   __/\__   __/\__   __/(  ____ )(  ____ \(  ____ \  / ___   )
+   ) (      ) (      ) (   | (    )|| (    \/| (    \/  \/   )  |
+   | |      | |      | |   | (____)|| (__    | (_____       /   )
+   | |      | |      | |   |     __)|  __)   (_____  )    _/   /
+   | |      | |      | |   | (\ (   | (            ) |   /   _/
+   | |   ___) (___   | |   | ) \ \__| (____/\/\____) |  (   (__/\
+   )_(   \_______/   )_(   |/   \__/(_______/\_______)  \_______/
+
+
+ ******/
+
+ #blocAdmin .subTitleAdmin, .p312 .tarifsTitle, .quotaTitles,.planningTitle{
+ background:none;
+ font-size:15px;
+ color:#5D5D5D;
+ border-bottom:1px solid #E0E0E0;
+ /*line-height:auto;*/
+ padding:0 0 10px;
+ width:100%;
+ margin-bottom:20px;
+ font-weight: normal;
+ height: auto;
+ margin-top: 0;
+ text-align: left;
+ }
+
+/******
+
+_________ _______  ______   _        _______  _______
+\__   __/(  ___  )(  ___ \ ( \      (  ____ \(  ___  )|\     /||\     /|
+   ) (   | (   ) || (   ) )| (      | (    \/| (   ) || )   ( |( \   / )
+   | |   | (___) || (__/ / | |      | (__    | (___) || |   | | \ (_) /
+   | |   |  ___  ||  __ (  | |      |  __)   |  ___  || |   | |  ) _ (
+   | |   | (   ) || (  \ \ | |      | (      | (   ) || |   | | / ( ) \
+   | |   | )   ( || )___) )| (____/\| (____/\| )   ( || (___) |( /   \ )
+   )_(   |/     \||/ \___/ (_______/(_______/|/     \|(_______)|/     \|
+
+
+ ******/
+
+/* entêtes TH / TD:first-child */
+
+.p4502 #titleResultRecherche td,
+.p264 .rgp_list_title_row th, .contentBlockSalle th, #blocAdmin #evenementChampsRequis tr th,
+.boxAdmin .afficheResultat .tableHeader, .config_editor_form table th, .p312 #tarifs div .tarifsTitles,
+#blocAdmin .boxAdmin2 .tarifsDisponibles, #blocAdmin .boxAdmin2 #groupesDisponibles, 
+#tabDateSelected .table02, .p326 .zoneLT_listeTarifs table th, #blocAdmin table.listeTarifs th,
+.p474 .zoneLB_listeBillets .zoneBody table th,.p392 #zonePaniers_table .canalDeVenteRow th,
+.p392 #zonePaniers_table .paniersListHeaderRow th,#blocAdmin .boxAdmin2 .tarifsDisponibles div:first-child,
+.adminBodyContent .zoneBody table tbody tr:first-child,
+.p372 table[width="100%"] table[cellspacing="1"] tr.table02,tr.table02,table.rose thead tr
+ {
+  background:#FFF;
+  border-bottom:2px solid #efefef;
+  font-weight:bold;
+  text-transform:capitalize;
+  font-size:14px;
+  font-size: 0.8vw;
+  padding:8px;
+  line-height: 1.42857;
+  color: #212121;
+}
+
+/* odd  TR */
+
+.unOrganisateur.ligneResult.ligne1,
+.rgp_list_result.odd.regroupementAffiche,
+.minitr.rgp_list_result.odd.regroupementAffiche,
+.contentBlockSalle > div:nth-child(even),
+#planning > tr:nth-child(odd),
+#journeesTypeList .afficheResultat tr:nth-child(odd),.rgp_list_result.odd.regroupementMasque,#blocAdmin #evenementChampsRequis tr.unelignesurdeux,
+#blocAdmin .boxAdmin .afficheResultat tr.tableFooter, .p227 table tbody tr.container:nth-child(odd),
+.zoneLT_listTarif3 tbody, #blocAdmin #listeTarifsSurPlace table tr:nth-child(odd):not(:first-child),
+ #blocAdmin #listeTarifsGenerique table tr:nth-child(odd):not(:first-child),
+ .p474 .zoneLB_listeBillets .transaction,.p392 #zonePaniers_table .panier:nth-child(odd),
+ #blocAdmin .boxAdmin2 .tarifsDisponibles div:nth-child(even):not(:first-child),
+ .adminBodyContent .zoneBody table tbody tr:nth-child(even),
+ .p372 table[width="100%"] table[cellspacing="1"] tr.table01:nth-child(even),tr.table01:nth-child(even),
+ #blocAdmin .boxAdmin2 #groupesDisponibles > div:nth-child(even) {
+ background-color: #f9f9f9;
+ border-bottom:1px solid #efefef;
+ text-transform:capitalize;
+ font-size:14px;
+ font-size: 0.8vw;
+ line-height: 1.42857;
+ }
+
+/*  even TR  */
+.unOrganisateur.ligneResult.ligne2,
+.rgp_list_result.even.regroupementAffiche,
+.minitr.rgp_list_result.even.regroupementAffiche,
+.contentBlockSalle > div:nth-child(odd),
+#planning > tr:nth-child(even),
+#journeesTypeList .afficheResultat tr:nth-child(even), .rgp_list_result.even.regroupementMasque,
+ #blocAdmin #evenementChampsRequis tr,.p227 table tbody tr.container:nth-child(even),
+ .p474 .zoneLB_listeBillets .transaction.uneLigneSurDeux, .p392 #zonePaniers_table .panier:nth-child(even),
+ #blocAdmin .boxAdmin2 .tarifsDisponibles> div:nth-child(odd) ,
+ .adminBodyContent .zoneBody table tbody tr:nth-child(odd),
+ .p372 table[width="100%"] table[cellspacing="1"] tr.table01:nth-child(odd),tr.table01:nth-child(odd),
+  #blocAdmin .boxAdmin2 #groupesDisponibles > div:nth-child(odd){
+  background-color: #FFF;
+  border-bottom:1px solid #efefef;
+  text-transform:capitalize;
+  font-size:14px;
+  font-size: 0.8vw;
+  line-height: 1.42857;
+ }
+
+ /*  ajout padding aux TR et TD  */
+
+.boxAdmin2 .afficheResultat td{
+  padding:8px;
+ }
+
+/* TR hover  */
+
+.unOrganisateur.ligneResult.ligne2:hover,
+.unOrganisateur.ligneResult.ligne1:hover,
+.contentBlockSalle > div:hover,
+#planning tr:hover, #journeesTypeList .afficheResultat tr:hover, .rgp_list_result.odd.regroupementAffiche:hover, .rgp_list_result.even.regroupementAffiche:hover,
+#blocAdmin #evenementChampsRequis tr:hover,#blocAdmin .boxAdmin .afficheResultat tr:not(.tableHeader):hover,
+.p227 table tbody tr.container:hover,.dropdown li:hover, #blocAdmin #listeTarifsSurPlace table tr:not(:first-child):hover,
+#blocAdmin #listeTarifsGenerique table tr:not(:first-child):hover,
+ .p474 .zoneLB_listeBillets .transaction:hover, .p392 #zonePaniers_table .panier:hover,
+ #blocAdmin .boxAdmin2 .tarifsDisponibles div:not(:first-child):hover,
+ .adminBodyContent .zoneBody table tbody tr:not(:first-child):hover,
+ .p372 table[width="100%"] table[cellspacing="1"] tr.table01:hover,tr.table01:hover
+ , #blocAdmin table.rose tr.odd:hover, #blocAdmin table.rose tr.even:hover,
+ #blocAdmin .boxAdmin2 #groupesDisponibles > div:not(:first-child):hover {
+ background-color: #E6E6E6;
+}
+/* TR hover SANS BACKGROUND  COLOR */
+#blocAdmin .boxAdmin .afficheResultat tr.tableFooter+tr:hover,#blocAdmin .boxAdmin .afficheResultat tr.headerBoxAdmin:hover,
+#blocAdmin .boxAdmin .afficheResultat tr.headerBoxAdmin+tr:hover,#blocAdmin .boxAdmin .afficheResultat tr.headerBoxAdmin+tr+tr:hover,
+#blocAdmin .boxAdmin .afficheResultat tr.sousTotal.uneLigneSurDeux+tr:hover,
+.p474 .zoneLB_listeBillets .transaction.uneLigneSurDeux td.uneColonneSurDeux,
+.p474 .zoneLB_listeBillets .transaction td.uneColonneSurDeux,
+.p392 #zonePaniers_table .panier td, #zonePaniers_table .panierDetails td:not(:first-child),
+.p392 #zonePaniers_table .panierDetails td,
+.adminBodyContent .zoneBody table tbody tr.container.rule.parentRule.readonly
+{
+    background: none;
+}
+/* XXXXXX Suppression roll jaune XXXXXXXXXX*/
+
+.p474 #blocAdmin table td.mouseOver:not(:first-child),.p484 #blocAdmin table td.mouseOver:not(:first-child){
+    background: none!important;
+}
+.p474 #blocAdmin .zoneLB_listeBillets .transaction .canalDeVenteType{
+	background: url('../image_aff/vente_guichet_min.png') no-repeat center!important;
+}
+.p484 #blocAdmin .zoneLB_listeBillets .transaction .id{
+	background: url('/../image_aff/css_TransactionIcoDetail.gif') no-repeat left!important;}
+
+.adminBodyContent .zoneBody  table.btn_table{
+	width: auto;
+}
+/******
+
+ _______           _______  _        _______  _______  _______  _       _________
+(  ____ \|\     /|(  ____ \( (    /|(  ____ \(       )(  ____ \( (    /|\__   __/
+| (    \/| )   ( || (    \/|  \  ( || (    \/| () () || (    \/|  \  ( |   ) (
+| (__    | |   | || (__    |   \ | || (__    | || || || (__    |   \ | |   | |
+|  __)   ( (   ) )|  __)   | (\ \) ||  __)   | |(_)| ||  __)   | (\ \) |   | |
+| (       \ \_/ / | (      | | \   || (      | |   | || (      | | \   |   | |
+| (____/\  \   /  | (____/\| )  \  || (____/\| )   ( || (____/\| )  \  |   | |
+(_______/   \_/   (_______/|/    )_)(_______/|/     \|(_______/|/    )_)   )_(
+
+
+ ******/
+
+/* BLOC DU HAUT */
+#blocAdmin .boxAdmin2 #rechercheEvt {
+    overflow: auto;
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #d8d8d8;
+    background-color: white;
+    border-radius: 6px 6px 0 0
+    }
+
+#blocAdmin .boxAdmin2 #rechercheEvt .dropListeRech {
+    float: right;
+    padding-right: 10px;
+    width: 50%;
+    color: #333;
+    font-size: 16px;
+}
+#blocAdmin .boxAdmin2 #rechercheEvt .dropListeRech a{
+    background: none;
+    color: #333;
+    padding: 0;
+}
+.dropListeRech form {
+    display: block;
+    width: 55%;
+}
+.dropListeRech form select{
+    margin: 10px 5px 10px 0;
+}
+#blocAdmin .boxAdmin2 #rechercheEvt .champRech{
+    margin-top: 25px;
+    float: left;
+}
+/* BLOC DU BAS */
+#blocAdmin .boxAdmin2 .infos1 {
+    border-radius: 0 0 0 6px;
+    border-left: 1px solid #d8d8d8;
+}
+
+#blocAdmin .boxAdmin2 .infos2 {
+    border-radius: 0 0 6px 0;
+    border-right: 1px solid #d8d8d8;
+    border-left: 1px solid #d8d8d8;
+}
+
+#blocAdmin .boxAdmin2 .infos1,#blocAdmin .boxAdmin2 .infos2 {
+    width: 50%;
+    font-size: 14px;
+    border-bottom: 1px solid #d8d8d8;
+    margin-bottom: 30px;
+    float: left;
+    color: #000;
+    padding: 10px 0 10px 10px;
+}
+#blocAdmin .boxAdmin2 .infos2 a{
+    text-decoration: none;
+}
+#blocAdmin .boxAdmin2 .infos2 a:hover{
+    text-decoration: underline;
+    color: #23527c;
+    background: none;
+}
+
+/* XXXXXXXXXXXXXXXXXXXXXXX
+
+
+ _______  _______  _        _______  _        ______   _______ _________ _______  _______ 
+(  ____ \(  ___  )( \      (  ____ \( (    /|(  __  \ (  ____ )\__   __/(  ____ \(  ____ )
+| (    \/| (   ) || (      | (    \/|  \  ( || (  \  )| (    )|   ) (   | (    \/| (    )|
+| |      | (___) || |      | (__    |   \ | || |   ) || (____)|   | |   | (__    | (____)|
+| |      |  ___  || |      |  __)   | (\ \) || |   | ||     __)   | |   |  __)   |     __)
+| |      | (   ) || |      | (      | | \   || |   ) || (\ (      | |   | (      | (\ (   
+| (____/\| )   ( || (____/\| (____/\| )  \  || (__/  )| ) \ \_____) (___| (____/\| ) \ \__
+(_______/|/     \|(_______/(_______/|/    )_)(______/ |/   \__/\_______/(_______/|/   \__/
+                                                                                          
+XXXXXXXXXXXX */
+
+/* XXXXXX Onglets XXXXXXXXXX */
+.p326 #zoneRS_onglet li#zoneRS_dateSelectorTab,.p326 #zoneRS_onglet li#zoneRS_periodeSelectorTab{
+	background: #F5F5F5;
+	border-bottom: 1px solid #ededed;
+}
+.p326 #zoneRS_onglet li#zoneRS_dateSelectorTab.focus,
+.p326 #zoneRS_onglet li#zoneRS_periodeSelectorTab.focus{
+	background: white;
+	border-bottom: none;
+}
+.p326 #zoneRS_onglet li.focus, .p326 #zoneRS_onglet li.focus .zoneRS_onglet1,
+.p326 #zoneRS_onglet li.focus .zoneRS_onglet2,
+{
+	background: white;
+	background-image: none;
+}
+.p326 #zoneRS_onglet li .zoneRS_onglet1,
+.p326 #zoneRS_onglet li .zoneRS_onglet2{
+	background: none!important;
+}
+.p326 #zoneRS_onglet{
+	background: none;
+}
+.p326 #zoneRS_onglet ul, .p326 div.dp-popup{
+	width: 100%;
+	background: none;
+	margin: 0;
+}
+.p326 #zoneRS_onglet ul li{
+	width: 50%;
+	margin: 0;
+}
+.p326 #zoneRS_onglet ul li:last-child{
+	border-left: 1px solid #ededed;
+}
+
+ .p326 div.dp-popup,.p1106 div.dp-popup{
+ 	color: #8f8f8f;
+ }
+ .p1106 div.dp-popup{
+    position: relative;
+    font-size: 12px;
+    font-family: 'Lato';
+    padding: 0px;
+    line-height: 1.2em;
+    background: none;
+    width: auto;
+}
+
+ .p326 #zoneRS_onglet li, .p326 #zoneRS_onglet li .zoneRS_onglet0{
+ 	color: #8f8f8f;
+ 	font-size: 13px;
+ 	padding: 4px 0 4px 8px;
+ 	background: none;
+ 	font-weight: normal;
+ }
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXX Corps calendrier XXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+
+div#dp-popup, div#calendar-4, #calendrier,.p326 .zoneRS_dates,.p1106 .zoneRS_dates{
+	width: 272px;
+	height: auto;
+	font-family: 'Lato';
+	color: #8f8f8f;
+	border: 1px solid #ededed;
+	padding: 2px;
+	margin: 5px;
+	background: white;
+	border-radius: 4px 4px 0 0;
+}
+div#dp-popup h2, div#calendar-4 h2, #calendrier,.p326 div.dp-popup h2,.p1106 div.dp-popup h2{
+	font-size: 11px;
+	text-transform: uppercase;
+	font-weight: lighter;
+	padding: 20px 0;
+}
+div#dp-popup div.dp-nav-prev, div#calendar-4 div.dp-nav-prev, .p326 div.dp-popup div.dp-nav-prev,
+ .p1106 div.dp-popup div.dp-nav-prev{
+	top: 16px;
+	left: 25px;
+}
+div#dp-popup div.dp-nav-next, div#calendar-4 div.dp-nav-next, .p326 div.dp-popup div.dp-nav-next,
+ .p1106 div.dp-popup div.dp-nav-next{
+	top: 16px;
+	right: 13px;
+}
+div#dp-popup div.dp-nav-prev a, div#dp-popup div.dp-nav-next a, div#calendar-4 div.dp-nav-prev a,
+div#calendar-4 div.dp-nav-next a, .p326 div.dp-popup div.dp-nav-next a, .p326 div.dp-popup div.dp-nav-prev a,
+ .p1106 div.dp-popup div.dp-nav-next a, .p1106 div.dp-popup div.dp-nav-prev a{
+	color: #8f8f8f;
+	display: block;
+	height: 23px;
+	width: 23px;
+	margin-right: 12px;
+	position: relative;
+}
+div#dp-popup div.dp-nav-prev a:before, div#dp-popup div.dp-nav-next a:before,
+div#calendar-4 div.dp-nav-prev a:before, div#calendar-4 div.dp-nav-next a:before,
+.p326 div.dp-popup div.dp-nav-prev a:before, .p326 div.dp-popup div.dp-nav-next a:before,
+.p1106 div.dp-popup div.dp-nav-prev a:before, .p1106 div.dp-popup div.dp-nav-next a:before{
+	content: "\f100";
+	font-family: 'FontAwesome';
+	color: #8f8f8f;
+	font-size: 20px;
+	font-weight: bold;
+	position: absolute;
+	display: block;
+	top:3px;
+	height: 23px;
+	width: 23px;
+	background: white;
+}
+div#dp-popup div.dp-nav-prev a.dp-nav-prev-month:before,
+div#calendar-4 div.dp-nav-prev a.dp-nav-prev-month:before,
+.p326 div.dp-popup div.dp-nav-prev a.dp-nav-prev-month:before,
+.p1106 div.dp-popup div.dp-nav-prev a.dp-nav-prev-month:before
+{
+	content: "\f053";
+	font-size: 13px;
+	top:5px;
+}
+div#dp-popup div.dp-nav-next a.dp-nav-next-month:before,
+div#calendar-4 div.dp-nav-next a.dp-nav-next-month:before,
+.p326 div.dp-popup div.dp-nav-next a.dp-nav-next-month:before,
+.p1106 div.dp-popup div.dp-nav-next a.dp-nav-next-month:before
+{
+	content: "\f054";
+	font-size: 13px;
+	top:5px;
+}
+div#dp-popup div.dp-nav-next a.dp-nav-next-year:before,
+div#calendar-4 div.dp-nav-next a.dp-nav-next-year:before,
+.p326 div.dp-popup div.dp-nav-next a.dp-nav-next-year:before,
+.p1106 div.dp-popup div.dp-nav-next a.dp-nav-next-year:before
+{
+	content: "\f101";
+}
+div#dp-popup table.jCalendar, div#dp-popup table.jCalendar th,
+div#calendar-4 table.jCalendar, div#dp-popup table.jCalendar th, #calendrier .table02,
+.p326 div.dp-popup table.jCalendar,.p326 div.dp-popup table.jCalendar th,
+.p1106 div.dp-popup table.jCalendar,.p1106 div.dp-popup table.jCalendar th {
+    border: none;
+    background: none;
+    font-family: 'Lato';
+    font-size: 12px;
+    color: #5f5f5f;
+    font-weight: lighter;
+    margin: 2px;
+}
+div#dp-popup td, div#calendar-4 td,#calendrier .table01, .p326 div.dp-popup td,
+.p1106 div.dp-popup td,.p1106 table.jCalendar td.disabled{
+	background: #f6f6f6;
+	padding: 10px;
+	border: solid 1px white;
+	color: #c5c5c5;
+	font-weight: lighter;
+	font-family: 'lato';
+}
+div#dp-popup td.current-month, div#calendar-4 .dp-calendar td.current-month,#calendrier .table01,
+.p326 div.dp-popup td.current-month,.p1106 div.dp-popup td.current-month{
+	color: #5d5d5d;
+}
+div#dp-popup td:hover, div#dp-popup td.today,
+div#calendar-4 .dp-calendar td:hover, div#calendar-4 .dp-calendar td.today, #calendrier .table01 td:hover,
+.p326 div.dp-popup td:hover,.p1106 div.dp-popup td:hover,.p1106 table.jCalendar td.today{
+	background: #e9007f;
+	color: white;
+}
+.dp-calendar table.jCalendar,.p1106 table.jCalendar td.disabled,
+.p1106 table.jCalendar td.disabled:hover,.p1106 table.jCalendar tr:hover,
+.p1106 table.jCalendar tr
+{
+	font-family: 'Lato'!important;
+	border: none!important;
+	background: none!important;
+	font-size: 12px!important;
+}
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+
+ _______  _        _______  _        _______ _________ _______ 
+(  ___  )( (    /|(  ____ \( \      (  ____ \\__   __/(  ____ \
+| (   ) ||  \  ( || (    \/| (      | (    \/   ) (   | (    \/
+| |   | ||   \ | || |      | |      | (__       | |   | (_____ 
+| |   | || (\ \) || | ____ | |      |  __)      | |   (_____  )
+| |   | || | \   || | \_  )| |      | (         | |         ) |
+| (___) || )  \  || (___) || (____/\| (____/\   | |   /\____) |
+(_______)|/    )_)(_______)(_______/(_______/   )_(   \_______)
+                                                               
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+.p326 #rmm_editorTabs .zoneBody, .p326 #rmm_editor_body{
+	background: none;
+}
+
+li#stateTab span:not(:first-child),li#timestampTab span:not(:first-child),
+li#pricingTab span:not(:first-child), li#reservoirsTab span:not(:first-child),
+li#intervenantsTab span:not(:first-child){
+	display: none;
+}
+#rmm_editorTabs ul{
+	border-radius: 6px 6px 0 0;
+	border-right: 1px solid #ddd;
+	border-left: 1px solid #ddd;
+	border-top: 1px solid #ddd;
+	position: absolute;
+	bottom: -3px;
+	margin: 0;
+	padding-top: 1px;
+	padding-left: 1px;
+	text-transform: uppercase;
+	background: #EDEDED;
+
+}
+.p326 #rmm_editorTabs{
+	border-bottom: 1px solid #ddd;	
+}
+.p326 #rmm_editorTabs li, #jt_representationTypeManager .jt_tabs li{
+	margin: 0;
+	padding: 3px 15px 8px 15px;
+	background: #EDEDED;
+	text-transform: uppercase;
+}
+ #jt_representationTypeManager .jt_tabs li:first-child{
+ 	border-radius: 4px 0 0 0;
+ 	border-right: 1px solid #ddd;
+	border-left: 1px solid #ddd;
+	border-top: 1px solid #ddd;
+ }
+  #jt_representationTypeManager .jt_tabs li:last-child{
+ 	border-radius: 0 4px 0 0;
+ 	border-right: 1px solid #ddd;
+	border-top: 1px solid #ddd;
+ }
+.p326 #rmm_editorTabs li:not(:last-child),#jt_representationTypeManager .jt_tabs li:not(:first-child){
+		border-right: 1px solid #ddd;
+}
+.p326 #rmm_editorTabs li:hover,#jt_representationTypeManager .jt_tabs li:hover{
+	background: #e0dddd;
+}
+.p326 #rmm_editorTabs li a,#jt_representationTypeManager .jt_tabs li button{
+	font-size: 12px;
+	color: #7A7A7A;
+	font-weight: bold;
+}
+.p326 #rmm_editorTabs li.active,#jt_representationTypeManager .jt_tabs li.jt_active{
+	background: white
+}
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+
+ _______  _______  _______ _________ _        _______ __________________ _______  _       
+(  ____ )(  ___  )(  ____ \\__   __/( (    /|(  ___  )\__   __/\__   __/(  ___  )( (    /|
+| (    )|| (   ) || (    \/   ) (   |  \  ( || (   ) |   ) (      ) (   | (   ) ||  \  ( |
+| (____)|| (___) || |         | |   |   \ | || (___) |   | |      | |   | |   | ||   \ | |
+|  _____)|  ___  || | ____    | |   | (\ \) ||  ___  |   | |      | |   | |   | || (\ \) |
+| (      | (   ) || | \_  )   | |   | | \   || (   ) |   | |      | |   | |   | || | \   |
+| )      | )   ( || (___) |___) (___| )  \  || )   ( |   | |   ___) (___| (___) || )  \  |
+|/       |/     \|(_______)\_______/|/    )_)|/     \|   )_(   \_______/(_______)|/    )_)
+                                                                                          
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+ .pagination{width: 100%!important;}
+  #blocAdmin #pagination.boxAdmin2, .pagination  {
+    display: flex!important;
+    flex-direction: row!important ;
+    justify-content: space-between!important;
+    padding-top: 5px!important;
+    border-top: 1px solid #ddd!important;
+    font-size: 15px!important;
+    background: none!important;
+}
+ #pagination .resultatGauche,#pagination .resultatDroit,
+.pagination .resultatGauche,.p474 .pagination .resultatDroit{
+ 	width: 33%!important;
+ }
+ #pagination .resultatDroit,.pagination .resultatDroit {
+ 	text-align: right!important;
+ }
+#pagination .poussetPageContainer .poussetLien, #pagination .poussetPageContainer .poussetLienActif,
+#pagination .poussetPageContainer .poussetLien:hover,
+.pagination .poussetPageContainer .pl,.pagination .poussetPageContainer .pla,
+.pagination .poussetPageContainer .pl:hover {
+    width: auto!important;
+    text-align: center!important;
+    font-size: 11px!important;
+    cursor: pointer!important;
+    font-weight: normal!important;
+    padding: 6px 12px!important;
+	background-color: #fff!important;
+	display: block!important;
+	float: left!important;
+	margin: 0!important;
+	color: white!important;
+	background: #e6007e!important;
+	transition: all 0.3s ease-in!important;
+}
+#pagination .poussetPageContainer .poussetLien,.pagination .poussetPageContainer .pl{
+    background: #FFF!important;
+    color: #777!important;
+}
+#pagination .poussetPageContainer,.p474 .pagination .poussetPageContainer,
+ .p484 .pagination .poussetPageContainer{
+	border-radius: 6px!important;
+	border: 1px solid #ddd!important;
+	overflow: hidden!important;
+    width: initial!important;
+}
+#pagination .poussetPageContainer span:not(:first-child),.pagination .poussetPageContainer span:not(:first-child){
+	border-left: 1px solid #ddd!important;
+}
+#pagination .poussetDroitContainer #poussetplus, #pagination .poussetGaucheContainer #poussetmoins,
+#pagination .poussetDroitContainer #poussetendplus, #pagination .poussetGaucheContainer #poussetendmoins,
+.pagination .poussetDroitContainer #plus, .pagination .poussetGaucheContainer #moins,
+ .pagination .poussetDroitContainer #endplus, .pagination .poussetGaucheContainer #endmoins
+{
+	display: inline-block!important;
+	margin-top: 5px!important;
+	padding: 0 10px!important;
+	position: relative!important;
+}
+
+#pagination .poussetDroitContainer #poussetplus:before,
+#pagination .poussetGaucheContainer #poussetmoins:before,
+#pagination .poussetDroitContainer #poussetendplus:before,
+#pagination .poussetGaucheContainer #poussetendmoins:before,
+.pagination .poussetDroitContainer #plus:before,
+.pagination .poussetGaucheContainer #moins:before,
+.pagination .poussetDroitContainer #endplus:before,
+.pagination .poussetGaucheContainer #endmoins:before{
+	content: '\f054'!important;
+	font-family: 'FontAwesome'!important;
+	display: inline-block!important;
+	color: #777!important;
+	position: absolute!important;
+	font-size: 15px!important;
+	top: 0!important;
+	right: 0!important;
+	padding: 0 10px!important;
+	background: white!important;
+	cursor: pointer!important;
+}
+#pagination .poussetGaucheContainer #poussetmoins:before,
+.pagination .poussetGaucheContainer #moins:before
+{
+	content: '\f053'!important;
+}
+#pagination .poussetGaucheContainer #poussetendmoins:before,
+ .pagination .poussetGaucheContainer #endmoins:before{
+	content: '\f100'!important;
+}
+#pagination .poussetDroitContainer #poussetendplus:before,
+.pagination .poussetDroitContainer #endplus:before{
+	content: '\f101'!important;
+}
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx
+
+
+
+                            _      __ _      _     _               
+                           | |    / _(_)    | |   (_)              
+  _____  ___ __   ___  _ __| |_  | |_ _  ___| |__  _  ___ _ __ ___ 
+ / _ \ \/ / '_ \ / _ \| '__| __| |  _| |/ __| '_ \| |/ _ \ '__/ __|
+|  __/>  <| |_) | (_) | |  | |_  | | | | (__| | | | |  __/ |  \__ \
+ \___/_/\_\ .__/ \___/|_|   \__| |_| |_|\___|_| |_|_|\___|_|  |___/
+          | |                                                      
+          |_|                                                      
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+.p474 #exportsZone #formatExports #formatExportPdf,.p484 #exportsZone #formatExports #formatExportPdf{
+	background-position: 17px -185px;
+	height: 44px;
+}
+.p474 #exportsZone #formatExports #formatExportPdf.disabled,.p484 #exportsZone #formatExports #formatExportPdf.disabled{
+	background-position: 17px -225px;
+	height: 44px;
+}
+.p474 #exportsZone #formatExports #formatExportXls,.p484 #exportsZone #formatExports #formatExportXls{
+background-position: 17px -93px;
+	height: 44px;
+}
+.p474 #exportsZone #formatExports #formatExportXls.disabled,.p484 #exportsZone #formatExports #formatExportXls.disabled{
+	background-position: 17px -139px;
+	height: 44px;
+}
+.p474 #exportsZone #formatExports #formatExportCsv,.p484 #exportsZone #formatExports #formatExportCsv{
+background-position: 17px -5px;
+	height: 44px;
+}
+.p474 #exportsZone #formatExports #formatExportCsv.disabled,.p484 #exportsZone #formatExports #formatExportCsv.disabled{
+	background-position: 17px -50px;
+	height: 44px;
+}
+/******
+
+          _______  _______  ______   _______  _______
+|\     /|(  ____ \(  ___  )(  __  \ (  ____ \(  ____ )
+| )   ( || (    \/| (   ) || (  \  )| (    \/| (    )|
+| (___) || (__    | (___) || |   ) || (__    | (____)|
+|  ___  ||  __)   |  ___  || |   | ||  __)   |     __)
+| (   ) || (      | (   ) || |   ) || (      | (\ (
+| )   ( || (____/\| )   ( || (__/  )| (____/\| ) \ \__
+|/     \|(_______/|/     \|(______/ (_______/|/   \__/
+
+
+ ******/
+.headerMenuRow{background-color:#333333;  }
+
+#header{background:rgba(0,0,0,0) none repeat scroll 0 0;  font-size:12px;      left:324px;  height:40px;      padding:0 105px 0 0;  position:absolute;  top:10px;  min-width:900px;  width:75%;  }
+#header #headerLeft #headerLastAccess{font-family:"lato";  font-size:10px;    font-size:0.65vw;  font-weight:normal;  color:#777;    text-align:left;  }
+#header #headerLeft #headerTitreAdmin{font-family:"lato";  font-size:14px;    font-size:0.85vw;  font-weight:normal;  color:#d8d8d8;  text-transform:uppercase;    margin-top:8px;    position:relative;    text-align:left;  }
+#header #headerLeft #headerTitreAdmin:before{content:"";    display:block;    position:absolute;    background:url("../image_aff/v2_corps.png") no-repeat;      width:34px;    height:44px;    top:-5px;    left:-45px;  }
+#header #headerRight{padding:0 0 10px 0;  font-family:"lato";  font-size:14px;  font-weight:normal;  color:#c3c3c3;  text-transform:uppercase;  }
+#header #headerRight #headerDeconnecter,#header #headerRight #headerSwitchAdmin,#header #headerRight #headerRetourAdmin{line-height:30px;  background-image:none;  margin-top:10px;  padding:0 10px;  width:28%;  font-weight:normal;  font-size:12px;    font-size:0.65vw;  font-family:"Lato";    position:relative;  }
+.p4526 #header #headerRight #headerDeconnecter, .p4502  #header #headerRight #headerDeconnecter{float:none;  }
+#header #headerRight #headerDeconnecter:before,#header #headerRight #headerSwitchAdmin:before,#header #headerRight #headerRetourAdmin:before{content:"\f104";    font-family:"FontAwesome";    color:#E6007E;    position:absolute;    font-size:30px;    font-size:1.1vw;    font-weight:bold;    top:0;    left:-8px;  }
+#header #headerRight #headerDeconnecter:before{content:"\f08b";    font-size:18px;    font-size:0.9vw;    top:0;    left:-18px;  }
+#header #headerRight #headerSwitchAdmin:before{content:"\f06e";    font-size:18px;    font-size:0.9vw;    top:0;    left:-15px;   }
+#header #headerRight #headerRetourAdmin{width:35%;  }
+#headerBandeau{height:90px;  background:#222222 url("../image_aff/digitick_com.svg") no-repeat 30px -10px;    background-size:contain;  margin:0 auto;    position:relative;  }
+
+#headerBandeau:before{content:"";    display:block;   background:url("../image_aff/v2_dev_header.png") no-repeat;   background-size:cover;   position:absolute;   width:90px;   height:90px;    top:0;    right:85px;  }
+#headerBandeau #bandeau{text-align:right;  background:none;  }
+#headerBandeau #bandeau #lienSupport img{display:none;  }
+#headerBandeau #bandeau #lienSupport a{display:block;  float:right;  height:90px;  position:relative;  right:2px;  top:0;  width:83px;  background:#444444;    margin-left:85px;  }
+#headerBandeau #bandeau #lienSupport a:after{content:"\f1d8";    font-family:"FontAwesome";    font-size:35px;    position:absolute;    top:30%;    left:30%;    color:#777777;  }
+
+/****** BREADCRUMB ******/
+.zoneBody{border:none;    background:white;    }
+#pageLocation td{border:none;    background:#ecf0f1;    }
+#location_body{color:#FFF;    border:none;    background:#444;    padding:5px;    }
+
+
+
+ /*******
+
+ _______  _______  _
+(       )(  ____ \( (    /||\     /|
+| () () || (    \/|  \  ( || )   ( |
+| || || || (__    |   \ | || |   | |
+| |(_)| ||  __)   | (\ \) || |   | |
+| |   | || (      | | \   || |   | |
+| )   ( || (____/\| )  \  || (___) |
+|/     \|(_______/|/    )_)(_______)
+
+
+  *********/
+#menu #menuContent .menuItem .menuItemLeft,#menu #menuContent .menuItem .menuItemRight,#menu #menuContent .menuItem .menuItemContent{background:none;  padding:0;  }
+#menu #menuContent .menuItem{margin:0;  }
+#menu #menuContent .menuItem a{font-family:'Lato';      font-size:11px;    font-size:0.7vw;  line-height:70px;  text-transform:uppercase  }
+#menu #menuContent{background:#48ace0;  background-color:#333333;      height:70px;    line-height:70px;  }
+#menu #menuContent .menuItem,#menu #menuContent .menuItem .menuItemContentSelected{margin:0;      height:70px;      padding:0 9px;    line-height:70px;     font-weight:bold;     }
+#menu #menuContent .menuItem:first-child{margin-left:26px;  }
+#menu #menuContent .menuItem .menuItemLeftSelected, #menu #menuContent .menuItem .menuItemRightSelected{display:none;  }
+#menu #menuContent .menuItem .menuItemContentSelected{background:#e6007e;  }
+#menu #menuContent .menuItem .menuItemContent{transition:all 0.2s ease-in-out 0s;  }
+#menu #menuContent .menuItem .menuItemContent:hover{color:#e6007e;  }
+#menu #menuContent .menuItemSmaller a{line-height:45px;  font-family:'Lato';  font-size:11px;    font-size:0.8vw;  }
+#menu #menuContent .menuItem .menuItemLeft,#menu #menuContent .menuItem .menuItemRight{display:none;  }
+#menuEndingSpacer,#menuEndingSpacer2{display:none;  }
+#adminContent .arianeElement{padding:5px;    color:white;    border:none;    margin-left:32px;}
+#location{font-family:'Montserrat';    font-size:11px;    font-weight:normal;    background:#444444;}
+.xbreadcrumbs li{padding:5px 5px 5px 0;}
+#location a{color:#fff;    font-weight:bold;    text-decoration:none;}
+#location a:hover{color:white;    text-decoration:underline;}
+
+
+
+/******
+
+ _______ _________ ______   _______  ______   _______  _______
+(  ____ \\__   __/(  __  \ (  ____ \(  ___ \ (  ___  )(  ____ )
+| (    \/   ) (   | (  \  )| (    \/| (   ) )| (   ) || (    )|
+| (_____    | |   | |   ) || (__    | (__/ / | (___) || (____)|
+(_____  )   | |   | |   | ||  __)   |  __ (  |  ___  ||     __)
+      ) |   | |   | |   ) || (      | (  \ \ | (   ) || (\ (
+/\____) |___) (___| (__/  )| (____/\| )___) )| )   ( || ) \ \__
+\_______)\_______/(______/ (_______/|/ \___/ |/     \||/   \__/
+
+
+ ******/
+.horizontalMenuRow{height:100%;  }
+.horizontalMenuRow > td:first-child{width:15%;  min-width:220px;            max-width:350px;  white-space:nowrap;  padding:0;  background:#f6f6f6 none;  }
+.horizontalMenuRow #leftMenu{height:100%;        min-height:6000px;        width:100%;        min-width:220px;        max-width:350px;padding-top: 30px;}
+
+#leftMenu{
+    background:#f6f6f6 none;
+    padding-bottom:0;
+    font-family:"Lato";
+    min-height:auto;  }
+#leftMenu li{margin:0;  }
+#leftMenu li{
+        padding:0 0 0 10px;
+}
+#leftMenu #leftMenuContent a.leftMenuItem,
+#leftMenu #leftMenuContent .leftMenuItemSelected{
+    text-transform:uppercase;
+    color:#707070;
+    text-align:left;
+    background-image:none;
+    width:auto;
+    height:auto;
+    line-height:2.3em;
+    padding:0 0 0 40px;
+    background-color:transparent;
+    font-size:12px;
+    font-size:0.8vw;
+    position:relative;
+}
+#leftMenu #leftMenuContent .leftMenuSection{
+    padding:0 0 0 50px;
+    text-transform:uppercase;
+    color:#707070;
+    text-align:left;
+    background-image:none;
+    width:auto;
+    height:auto;
+    line-height:2.3em;
+    background-color:transparent;
+    position:relative;
+    font-family: 'Montserrat';
+    font-size: 15px;
+    font-size: 0.9vw;
+    font-weight: normal;
+}
+#leftMenu li.leftMenuSection:before{
+    content:"\f054";
+    font-family:"FontAwesome";
+    font-size:15px;
+    font-size:0.5vw;
+    color:#707070;
+    position:absolute;
+    top:0;
+    left:2.8em;
+}
+#leftMenu #leftMenuContent li a.leftMenuItem{
+    color:#555;
+    font-size:14px;
+    font-size:0.8vw;
+    text-transform:none;
+    transition:all 0.2s ease-in-out 0s;  }
+#leftMenu #leftMenuContent li a.leftMenuItem:hover{color:#e6007e;  }
+
+#leftMenu #leftMenuContent a:hover{background:white;    }
+#leftMenu #leftMenuContent .leftMenuSection:hover{background:none;}
+#leftMenu #leftMenuContent .leftMenuItemSelected,
+#leftMenu #leftMenuContent li.leftMenuItemSelected:hover{
+      color:#e2017b;
+      padding-left:0;
+      padding-right:20%;
+      text-transform:none;
+      background:white;
+      position:relative;
+      display:inline-block;
+      width:auto;
+      font-size:12px;
+      font-size:0.8vw;
+    }
+#leftMenu #leftMenuContent .leftMenuItemSelected{
+      padding-left:40px;
+}
+#leftMenu #leftMenuContent a{font-weight:normal;  }
+/******************************/
+
+
+/******
+
+ _______  _______ _________ _          _______ _________ _______          _________
+(       )(  ___  )\__   __/( (    /|  (  ____ )\__   __/(  ____ \|\     /|\__   __/
+| () () || (   ) |   ) (   |  \  ( |  | (    )|   ) (   | (    \/| )   ( |   ) (
+| || || || (___) |   | |   |   \ | |  | (____)|   | |   | |      | (___) |   | |
+| |(_)| ||  ___  |   | |   | (\ \) |  |     __)   | |   | | ____ |  ___  |   | |
+| |   | || (   ) |   | |   | | \   |  | (\ (      | |   | | \_  )| (   ) |   | |
+| )   ( || )   ( |___) (___| )  \  |  | ) \ \_____) (___| (___) || )   ( |   | |
+|/     \||/     \|\_______/|/    )_)  |/   \__/\_______/(_______)|/     \|   )_(
+
+
+ ******/
+.zoneBody{padding:0;}
+
+
+
+/*XXXXXXXXX
+
+                          _
+                         | |
+ _ __   __ _  __ _  ___  | | ___   __ _
+| '_ \ / _` |/ _` |/ _ \ | |/ _ \ / _` |
+| |_) | (_| | (_| |  __/ | | (_) | (_| |
+| .__/ \__,_|\__, |\___| |_|\___/ \__, |
+| |           __/ |                __/ |
+|_|          |___/                |___/
+
+ .p2 XXXXXXXXXXXXX*/
+body.p2{background:url("../image_aff/v2_bg-admin.jpg") no-repeat !important;    background-size:100% !important;  }
+.p2 #headerBandeau{background:url("../image_aff/digitick_com.svg") no-repeat 30px -10px;    background-color:rgba(0,0,0,0.0);    background-size:contain;}
+.p2 .headerMenuRow,.p2 .headerBandeauRow, .p2 #global,body.p2>table{background:none;  }
+.p2 #contentLogin, .p2 .divConteneur{border:none;}
+.p2 #contentLogin{width:20%;        max-width:300px;        background:white;        margin:10% auto 0 auto;        border-radius:4px;        padding-top:100px;    }
+.p2 #contentLogin .txt02B{position:relative;        color:#5e5e5e;        font-size:1.5em;        padding-bottom:1em;        max-width:90%;        margin:0 auto;        font-weight:lighter;    }
+.p2 #contentLogin .txt02B:before{content:"";        position:absolute;        display:block;        width:100%;        height:100%;        margin:0 auto;        background:url("../image_aff/v2_qrcode.svg") no-repeat 50% 0;        top:-120%;        background-size:contain;    }
+.p2 img[src="image_aff/copyright.gif"], .p2 input[type="hidden"]+tbody tr:first-child{display:none;    }
+.p2 script+table td:first-child{height:auto !important;    }
+.p2 .txt01[align="right"]{font-size:0;    }
+.p2 input[id="authLogin"]{background:#f5f5f5 url("../image_aff/v2_plane.png") no-repeat 3px 50%;    margin-bottom:25px;    padding-left:30px;    width:100%;    transition:all 0.3s;}
+.p2 input[name="motPasse"]{background:#f5f5f5 url("../image_aff/v2_lock.png") no-repeat 3px 50%;    padding-left:30px;    width:100%;    transition:all 0.3s;}
+.p2 input[name="motPasse"]:focus{background:url("../image_aff/v2_lock.png") no-repeat 3px 50% white;    outline:none;}
+.p2 input[id="authLogin"]:focus{background:url("../image_aff/v2_plane.png") no-repeat 3px 50% white;    outline:none;}
+.p2 .submit01{margin-bottom:50px;width:100%;margin-top: 10px;}
+.p2 .submit01:hover{background:black;}
+/*XXXXXXXXX FIN Page LOGIN XXXXXXXXXXXXX*/
+
+
+
+
+/*XXXXXXXXX
+
+                                                                                               _
+                                                                                              | |
+ _ __   __ _  __ _  ___    ___ _ __ ___  __ _    _____   _____ _ __   ___ _ __ ___   ___ _ __ | |_
+| '_ \ / _` |/ _` |/ _ \  / __| '__/ _ \/ _` |  / _ \ \ / / _ \ '_ \ / _ \ '_ ` _ \ / _ \ '_ \| __|
+| |_) | (_| | (_| |  __/ | (__| | |  __/ (_| | |  __/\ V /  __/ | | |  __/ | | | | |  __/ | | | |_
+| .__/ \__,_|\__, |\___|  \___|_|  \___|\__,_|  \___| \_/ \___|_| |_|\___|_| |_| |_|\___|_| |_|\__|
+| |           __/ |
+|_|          |___/
+
+ .p212 XXXXXXXXXXXXX*/
+.p212 .subTitleAdmin {padding:8px;background:#F6F6F6;border-bottom:1px solid #efefef;margin-bottom:20px;}
+.p212 .formBloc {overflow:auto;}
+.p212 .formLeft {padding:7px;}
+.p212 .formRight {margin-bottom:0;overflow: -moz-hidden-unscrollable;}
+
+/*XXXXXXXXX
+                          _ _     _                          _
+                         | (_)   | |                        | |
+ _ __   __ _  __ _  ___  | |_ ___| |_ ___   _ __   __ _  ___| | __
+| '_ \ / _` |/ _` |/ _ \ | | / __| __/ _ \ | '_ \ / _` |/ __| |/ /
+| |_) | (_| | (_| |  __/ | | \__ \ ||  __/ | |_) | (_| | (__|   <
+| .__/ \__,_|\__, |\___| |_|_|___/\__\___| | .__/ \__,_|\___|_|\_\
+| |           __/ |                        | |
+|_|          |___/                         |_|
+
+ .p202 XXXXXXXXXXXXX*/
+
+ .p202 #blocAdmin #titleAdmin {
+    margin-top: 20px;
+ }
+  .p202 .tableColonne2 .nav.nav-pills li{
+ 	margin-left: 5px;
+ }
+  .p227 label{
+  	height: auto;
+  }
+  .p227 .ui-multiselect-header{
+  	margin-bottom: 0;
+  }
+  .p227 .ui-widget-header{
+  	background: #d8d8d8;
+  }
+  .p227 .config_editor_form .table{
+  	border-collapse: collapse;
+  }
+/*
+   _                 _            _   _             
+| |               | |          | | (_)            
+| |_ _ __ __ _  __| |_   _  ___| |_ _  ___  _ __  
+| __| '__/ _` |/ _` | | | |/ __| __| |/ _ \| '_ \ 
+| |_| | | (_| | (_| | |_| | (__| |_| | (_) | | | |
+ \__|_|  \__,_|\__,_|\__,_|\___|\__|_|\___/|_| |_|
+                                                  
+*/  
+.p212 .ui-widget-header{
+	border: none!important;
+	background: none!important;
+}
+.p212 .ui-widget{
+	font-family: 'lato';
+}
+
+/* XXXXXXXXXXX
+
+___  ___          _ _  __ _           _   _                                                              _   
+|  \/  |         | (_)/ _(_)         | | (_)                                                            | |  
+| .  . | ___   __| |_| |_ _  ___ __ _| |_ _  ___  _ __     _____   _____ _ __   ___ _ __ ___   ___ _ __ | |_ 
+| |\/| |/ _ \ / _` | |  _| |/ __/ _` | __| |/ _ \| '_ \   / _ \ \ / / _ \ '_ \ / _ \ '_ ` _ \ / _ \ '_ \| __|
+| |  | | (_) | (_| | | | | | (_| (_| | |_| | (_) | | | | |  __/\ V /  __/ | | |  __/ | | | | |  __/ | | | |_ 
+\_|  |_/\___/ \__,_|_|_| |_|\___\__,_|\__|_|\___/|_| |_|  \___| \_/ \___|_| |_|\___|_| |_| |_|\___|_| |_|\__|
+                                                                                                             
+
+XXXXXXXXXXXXXXX */
+
+.p212 #blocAdmin .subTitleAdmin .toggleDisplay.hide, .p312 #blocAdmin .subTitleAdmin .toggleDisplay.hide{
+	background-position: right 5px;
+}
+
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+                              _   _               _              
+                             | | (_)             | |             
+  ___ ___  _ __ _ __ ___  ___| |_ _  ___  _ __   | |___   ____ _ 
+ / __/ _ \| '__| '__/ _ \/ __| __| |/ _ \| '_ \  | __\ \ / / _` |
+| (_| (_) | |  | | |  __/ (__| |_| | (_) | | | | | |_ \ V / (_| |
+ \___\___/|_|  |_|  \___|\___|\__|_|\___/|_| |_|  \__| \_/ \__,_|
+                                                                 
+                                                                 
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+.p223 label{
+	height: auto;
+}
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+       _             _                                                      _        _   _             
+      (_)           | |                                                    | |      | | (_)            
+  __ _ _  ___  _   _| |_ ___ _ __   _ __ ___ _ __  _ __ ___  ___  ___ _ __ | |_ __ _| |_ _  ___  _ __  
+ / _` | |/ _ \| | | | __/ _ \ '__| | '__/ _ \ '_ \| '__/ _ \/ __|/ _ \ '_ \| __/ _` | __| |/ _ \| '_ \ 
+| (_| | | (_) | |_| | ||  __/ |    | | |  __/ |_) | | |  __/\__ \  __/ | | | || (_| | |_| | (_) | | | |
+ \__,_| |\___/ \__,_|\__\___|_|    |_|  \___| .__/|_|  \___||___/\___|_| |_|\__\__,_|\__|_|\___/|_| |_|
+     _/ |                                   | |                                                        
+    |__/                                    |_|                                                        
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+.p312 #divSelectionTarif, .p312 #tarifs{
+	width: 100%;
+}
+.p312 #tarifs #tarifsFiltres, .p312 #tarifs #tarifsDetail{
+	width: 25%;
+	padding-left: 5px;
+}
+.p312 #tarifs #tarifsListe{
+	width: 45%;
+}
+.p312 #tarifs div .tarifsTitles{
+	height: auto;
+}
+.tarifType{
+	display: none;
+}
+.p312 #tarifs div, .p312 #tarifs div.tarifsPied{
+	border: none;
+	height: auto;
+}
+.p312 #tarifs>div span:nth-child(2){
+	border-right: 1px solid #efefef;
+}
+.p312 .ui-widget-header{
+	background: none;
+	height: auto;
+}
+.p312 #divSelectionTarif{
+	font-family: 'lato';
+}
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+                 _                                                     _        _   _             
+                (_)                                                   | |      | | (_)            
+  ___ ___  _ __  _  ___ _ __   _ __ ___ _ __  _ __ ___  ___  ___ _ __ | |_ __ _| |_ _  ___  _ __  
+ / __/ _ \| '_ \| |/ _ \ '__| | '__/ _ \ '_ \| '__/ _ \/ __|/ _ \ '_ \| __/ _` | __| |/ _ \| '_ \ 
+| (_| (_) | |_) | |  __/ |    | | |  __/ |_) | | |  __/\__ \  __/ | | | || (_| | |_| | (_) | | | |
+ \___\___/| .__/|_|\___|_|    |_|  \___| .__/|_|  \___||___/\___|_| |_|\__\__,_|\__|_|\___/|_| |_|
+          | |                          | |                                                        
+          |_|                          |_|                                                        
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+.p316 tr td.txt01 a img{
+	display: none;
+}
+.p316 tr td.txt01 a{
+	display: block;
+	width: 86px;
+	height: 34px;
+	position: relative;
+}
+.p316 tr td.txt01 a:before{
+	content: "Annuler";
+	font-family: "latoregular",sans-serif!important;
+    font-weight: 700;
+    color: white;
+}
+
+/*XXXXXXX calendrier spécifique */
+
+
+#calendrier .lienBleu{
+	padding: 0 10px;
+	color: #8f8f8f;
+	font-size: 20px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+
+                     _ _  __ _           _   _                               _ _   _       _           
+                    | (_)/ _(_)         | | (_)                             | | | (_)     | |          
+ _ __ ___   ___   __| |_| |_ _  ___ __ _| |_ _  ___  _ __    _ __ ___  _   _| | |_ _ _ __ | | ___  ___ 
+| '_ ` _ \ / _ \ / _` | |  _| |/ __/ _` | __| |/ _ \| '_ \  | '_ ` _ \| | | | | __| | '_ \| |/ _ \/ __|
+| | | | | | (_) | (_| | | | | | (_| (_| | |_| | (_) | | | | | | | | | | |_| | | |_| | |_) | |  __/\__ \
+|_| |_| |_|\___/ \__,_|_|_| |_|\___\__,_|\__|_|\___/|_| |_| |_| |_| |_|\__,_|_|\__|_| .__/|_|\___||___/
+                                                                                    | |                
+                                                                                    |_|                
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+
+.p326 .zoneRS_zone .zoneRS_divDateSelector{
+	background: none;
+	border: none;
+	width: 100%;
+	height: auto;
+	padding: 10px;
+}
+.p326 #zoneRS_divSubHeader{
+	background: none;
+	font-size: inherit;
+	font-weight: normal;
+	height: auto;
+	padding-top: 5px;
+	text-align: center;
+	text-transform: lowercase;
+}
+.p326 .zoneRS_horaires #zoneRS_horaireCalendar .zoneRS_colonneCalendarRep .zoneRS_heureRep{
+	height: auto;
+}
+.p326 .zoneRS_zone .zoneRS_inverseHoraire{
+	font-family: 'Lato'
+}
+.p326 .zoneRS_dates{
+	padding: 0;
+}
+.p326 .zoneRS_dateSelectorContent{
+	margin: 0;
+}
+.rep_submit.edit{
+	background: white;
+}
+
+.zoneLT_listeTarifs table.zoneLT_listTarif3 {
+	border: none;
+}
+.p326 .zoneLT_listeTarifs table{
+	border: none;
+}
+.p326 .zoneLT_listeTarifs table tr:nth-child(even):not(:hover){
+	background-color: #f9f9f9!important;
+}
+
+* #zoneReservoirs{
+	background: none!important;
+	border: none!important;
+	font-family: 'Lato'!important;
+}
+* #zoneReservoirs_table{
+	margin-top: 10px;
+	background: none!important;
+}
+.p326 #zoneReservoirs .refreshContainer{
+	background: none;
+	border: none;
+}
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+
+                                         _        _   _                   _      _        _ _     
+                                        | |      | | (_)                 | |    | |      (_) |    
+ _ __ ___ _ __  _ __ ___  ___  ___ _ __ | |_ __ _| |_ _  ___  _ __     __| | ___| |_ __ _ _| |___ 
+| '__/ _ \ '_ \| '__/ _ \/ __|/ _ \ '_ \| __/ _` | __| |/ _ \| '_ \   / _` |/ _ \ __/ _` | | / __|
+| | |  __/ |_) | | |  __/\__ \  __/ | | | || (_| | |_| | (_) | | | | | (_| |  __/ || (_| | | \__ \
+|_|  \___| .__/|_|  \___||___/\___|_| |_|\__\__,_|\__|_|\___/|_| |_|  \__,_|\___|\__\__,_|_|_|___/
+         | |                                                                                      
+         |_|                                                                                      
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+
+
+
+.p392 #zoneReservoirs .refreshContainer, .p392 #zonePaniers, .p392 #zonePaniers .refreshContainer{
+	background: none;
+	border: none;
+}
+
+.p392 #zoneReservoirs button.refresh span, .p392 #zonePaniers button.refresh span{
+	padding: 0;
+}
+.p392 #zonePaniers+.txtCenter a img{
+	visibility: hidden;
+}
+.p392 #zonePaniers+.txtCenter a{
+	display: block;
+	width: 75px;
+	margin: 0 auto;
+	position: relative;
+}
+.p392 #zonePaniers+.txtCenter a:before{
+	content: "Retour";
+	font-family: "latoregular",sans-serif!important;
+    font-size: 14px;
+    color: white;
+    position: absolute;
+    top: 22%;
+    left: 21%;
+}
+
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+
+                                         _        _   _                                __ _       
+                                        | |      | | (_)                              / _(_)      
+ _ __ ___ _ __  _ __ ___  ___  ___ _ __ | |_ __ _| |_ _  ___  _ __     ___ ___  _ __ | |_ _  __ _ 
+| '__/ _ \ '_ \| '__/ _ \/ __|/ _ \ '_ \| __/ _` | __| |/ _ \| '_ \   / __/ _ \| '_ \|  _| |/ _` |
+| | |  __/ |_) | | |  __/\__ \  __/ | | | || (_| | |_| | (_) | | | | | (_| (_) | | | | | | | (_| |
+|_|  \___| .__/|_|  \___||___/\___|_| |_|\__\__,_|\__|_|\___/|_| |_|  \___\___/|_| |_|_| |_|\__, |
+         | |                                                                                 __/ |
+         |_|                                                                                |___/ 
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+
+.p307 .enteteEvenement .zoneBody .infoEvenement{
+	font-family: "Lato";
+	font-size: inherit;
+	font-weight: normal;
+}
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+                                         _        _   _               _            _ _        _   _             
+                                        | |      | | (_)             (_)          (_) |      | | (_)            
+ _ __ ___ _ __  _ __ ___  ___  ___ _ __ | |_ __ _| |_ _  ___  _ __    _ _ ____   ___| |_ __ _| |_ _  ___  _ __  
+| '__/ _ \ '_ \| '__/ _ \/ __|/ _ \ '_ \| __/ _` | __| |/ _ \| '_ \  | | '_ \ \ / / | __/ _` | __| |/ _ \| '_ \ 
+| | |  __/ |_) | | |  __/\__ \  __/ | | | || (_| | |_| | (_) | | | | | | | | \ V /| | || (_| | |_| | (_) | | | |
+|_|  \___| .__/|_|  \___||___/\___|_| |_|\__\__,_|\__|_|\___/|_| |_| |_|_| |_|\_/ |_|\__\__,_|\__|_|\___/|_| |_|
+         | |                                                                                                    
+         |_|                                                                                                    
+
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+
+.p362 .txt01 a img, .p364 .txt01 a img{
+	visibility: hidden;
+}
+.p362 tr:nth-child(14) .txt01 a, .p364 tr .txt01 a{
+	display: block;
+	width: 75px;
+	margin: 0 auto;
+	position: relative;
+}
+.p362 tr:nth-child(14) .txt01 a:before, .p364 tr .txt01 a:before{
+	content: "Retour";
+	font-family: "latoregular",sans-serif!important;
+    font-size: 14px;
+    color: white;
+    position: absolute;
+    top: 20%;
+    left: 19%;
+}
+.p364 tr .txt01 a:before{
+	content: "Annuler";
+	top: 18%;
+    left: 15%;
+}
+.p474 #blocEvenement #blocEvenement_body{
+	float: none;
+	width: 100%;
+	background: none;
+}
+.p474 #blocEvenement #blocEvenement_body dl dd span, 
+.p474 #blocEvenement #blocEvenement_body dl dd span#evtNom
+{
+	font-weight: normal;
+	text-transform: lowercase;
+	font-size: inherit;
+}
+.p474 #recherche_body #blocRecherche {
+    width: 49%;
+}
+.p474 #recherche_body #blocFiltre{
+    width: 49%;
+}
+.p474 #blocRecherche #labelbeginDate, .p474 #blocRecherche #labelendDate{
+	padding: 0;
+	margin: 0;
+}
+.p474  #blocRecherche #labelbeginDate{
+	width: 31%;
+	margin-top: 20px;
+}
+ .p474 #blocRecherche #labelendDate{
+ 	padding: 20px 10px 0 0;
+ }
+.p474 #recherche_body .labelRecherche{
+	font-weight: normal;
+}
+.p474 #recherche_body #labeletatBillet, .p474 #recherche_body #labelmodeDeDiff,
+.p474 #recherche_body #labelcanalDeVente, .p474 #recherche_body #labeltarif, 
+.p474 #recherche_body #labelbilletsMono{
+	width: 50%;
+	text-align: right;
+}
+
+.p474 #blocAdmin .zoneLB_listeBillets .zoneBody table th,
+.p474 #blocAdmin .zoneLB_listeBillets .zoneBody table tr.headerTransaction
+{
+	background: none!important;
+	color:inherit;
+	font-size: 12px;
+}
+.p474 #blocAdmin table td {
+    padding: 6px;
+}
+.p474 #blocAdmin .zoneLB_listeBillets .zoneBody table th .headerAction.allpage{
+    background-position: 23px 5px;
+    height: 25px;
+}
+.p474 #blocAdmin .zoneLB_listeBillets .zoneBody table th .headerAction.all {
+   background-position: 23px 7px;
+   height: 25px;
+    }
+.p474 .zoneLB_listeBillets .infosBillet, .p474 .zoneLB_listeBillets .billet .billet{
+	border: none;
+}
+
+.p474 select{
+	padding: 0px 12px;
+}
+.p392 #zonePaniers_table .canalDeVenteRow .toggle button.hiding {
+    background: #fff;
+    color: #5D5D5D;
+    margin: 0;
+    margin-top: 7px;
+    border: none;
+    height: 15px;
+    line-height: 15px;
+    background: transparent url(/image_aff/bg_toggle.png) scroll repeat-x center;
+    padding: 0 5px;
+    font-weight: normal;
+    font-size: 10px;
+    text-decoration: underline;
+    font-size: 11px;
+}
+.p392 #zonePaniers_table tbody tr.paniersListHeaderRow th.nbPlaces {
+    line-height: normal;
+    width: 160px;
+}
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx
+
+
+
+                                         _        _   _                                   _ _  __ 
+                                        | |      | | (_)                                 | (_)/ _|
+ _ __ ___ _ __  _ __ ___  ___  ___ _ __ | |_ __ _| |_ _  ___  _ __    _ __ ___   ___   __| |_| |_ 
+| '__/ _ \ '_ \| '__/ _ \/ __|/ _ \ '_ \| __/ _` | __| |/ _ \| '_ \  | '_ ` _ \ / _ \ / _` | |  _|
+| | |  __/ |_) | | |  __/\__ \  __/ | | | || (_| | |_| | (_) | | | | | | | | | | (_) | (_| | | |  
+|_|  \___| .__/|_|  \___||___/\___|_| |_|\__\__,_|\__|_|\___/|_| |_| |_| |_| |_|\___/ \__,_|_|_|  
+         | |                                                                                      
+         |_|                                                                                      
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+#blocAdmin .boxAdmin2 .tarifsDisponibles div span.colonneTarif3 div:first-child{
+	border: none;
+}
+#blocAdmin .boxAdmin2 .tarifsDisponibles div span.colonneTarif3 div, 
+#blocAdmin .boxAdmin2 .tarifsDisponibles div span.colonneTarif3 div:hover{
+	background: none;
+}
+#blocAdmin .boxAdmin2 .tarifsDisponibles .tbody div.adherentTarif {
+    background: url("../image_aff/adherent_tarif.png") no-repeat 0 -36px;
+}
+/* XXXXXXXXX SUPPRIMER XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+#popup_overlay +#popup_container:not(.popup_container_ajax){
+	border: solid 1px #E0E0E0;
+	border-radius: 4px;
+	overflow: hidden;
+}
+#popup_overlay +#popup_container:not(.popup_container_ajax) #popup_title{
+	border-bottom: solid 1px #E0E0E0;
+
+}
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx
+
+
+ _____                                  _            _ _   
+|  ___|                                (_)          (_) |  
+| |__ _ ____   _____  _   _  ___ _ __   _ _ ____   ___| |_ 
+|  __| '_ \ \ / / _ \| | | |/ _ \ '__| | | '_ \ \ / / | __|
+| |__| | | \ V / (_) | |_| |  __/ |    | | | | \ V /| | |_ 
+\____/_| |_|\_/ \___/ \__, |\___|_|    |_|_| |_|\_/ |_|\__|
+                       __/ |                               
+                      |___/                                
+
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+
+.p372 table[width="100%"] table[cellspacing="1"]{
+	width: 100%;
+	border-collapse: collapse;
+	margin-bottom: 10px;
+}
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+
+______                                    _        _   _              
+| ___ \                                  | |      | | (_)             
+| |_/ /___ _ __  _ __ ___  ___  ___ _ __ | |_ __ _| |_ _  ___  _ __   
+|    // _ \ '_ \| '__/ _ \/ __|/ _ \ '_ \| __/ _` | __| |/ _ \| '_ \  
+| |\ \  __/ |_) | | |  __/\__ \  __/ | | | || (_| | |_| | (_) | | | | 
+\_| \_\___| .__/|_|  \___||___/\___|_| |_|\__\__,_|\__|_|\___/|_| |_| 
+          | |                                                         
+          |_|                                                         
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx*/
+
+.p484 #blocAdmin .zoneLB_listeReservations .zoneBody table tr.headerTransaction,
+.p484 #blocAdmin .zoneLB_listeReservations .zoneBody table th{
+	background: none!important;
+	color: #212121;
+}
+.p484 #blocAdmin .zoneLB_listeReservations .zoneBody table th .headerAction.allpage
+{
+	height: auto;
+	background: url('../image_aff/ico_pages.png') no-repeat 24px 3px;
+}
+.p484 #blocAdmin .zoneLB_listeReservations .zoneBody table th .headerAction.all {
+    background: url('../image_aff/ico_page.png') no-repeat 23px 5px;
+    	height: auto;
+}
+.p484 .zoneLB_listeReservations .transaction td.uneColonneSurDeux,
+.p484 .zoneLB_listeReservations .transaction.uneLigneSurDeux td.uneColonneSurDeux {
+    background: none;
+}
+.p484 .zoneLB_listeReservations, .p484 .zoneLB_listeReservations .zoneBody{
+	width: 100%;
+}
+.p484 #blocAdmin .zoneLB_listeReservations .zoneBody table #headerDateAchat {
+    width: 150px !important;
+}
+.p484 .zoneLB_listeReservations .transaction.selected,
+.p484 .zoneLB_listeReservations .infosReservation{
+	border: none;
+}
+.p484 #blocAdmin table td {
+    padding: 6px;
+    text-align: left;
+}
+.p484 #blocEvenement #blocEvenement_body {
+    float: left;
+    width: 100%;
+    background:none;
+}
+.p484 #blocEvenement{
+	width: 100%;
+}
+.p484 #blocEvenement #blocEvenement_body dl dd span#evtNom,.p484 #blocEvenement #blocEvenement_body dl dd span {
+    font-weight: normal;
+    text-transform: lowercase;
+    font-size: inherit;
+}
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+
+ _ _     _              _     _ _ _      _       
+| (_)   | |            | |   (_) | |    | |      
+| |_ ___| |_ ___ _ __  | |__  _| | | ___| |_ ___ 
+| | / __| __/ _ \ '__| | '_ \| | | |/ _ \ __/ __|
+| | \__ \ ||  __/ |    | |_) | | | |  __/ |_\__ \
+|_|_|___/\__\___|_|    |_.__/|_|_|_|\___|\__|___/
+                                                 
+                                                 
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx*/
+
+.p466 table[width="100%"] table[cellspacing="1"]{
+	width: 100%;
+	border-collapse: collapse;
+	margin-bottom: 10px;
+}
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+
+                        __                      __ _                         _       
+                        \ \                    / _(_)                       | |      
+ _ __  _ __ ___   __ _   \ \    ___ ___  _ __ | |_ _  __ _  __   _____ _ __ | |_ ___ 
+| '_ \| '__/ _ \ / _` |   > >  / __/ _ \| '_ \|  _| |/ _` | \ \ / / _ \ '_ \| __/ _ \
+| |_) | | | (_) | (_| |  / /  | (_| (_) | | | | | | | (_| |  \ V /  __/ | | | ||  __/
+| .__/|_|  \___/ \__, | /_/    \___\___/|_| |_|_| |_|\__, |   \_/ \___|_| |_|\__\___|
+| |               __/ |                               __/ |                          
+|_|              |___/                               |___/                           
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx*/
+.p213 .enteteEvenement .zoneBody .infoEvenement .eventName {
+    text-transform: lowercase;
+}
+.p213 .enteteEvenement .zoneBody .infoEvenement {
+    font-family:  'lato';
+    font-size: inherit;
+    font-weight: lighter;
+    width: 90%;
+    float: right;
+}
+.p213 .enteteEvenement .zoneBody .infoEvenement ul{
+	float: right;
+}
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx
+
+
+
+                     _ _  __     _                                    _                    
+                    | (_)/ _|   (_)                                  | |                   
+ _ __ ___   ___   __| |_| |_     _  ___  _   _ _ __ _ __   ___  ___  | |_ _   _ _ __   ___ 
+| '_ ` _ \ / _ \ / _` | |  _|   | |/ _ \| | | | '__| '_ \ / _ \/ _ \ | __| | | | '_ \ / _ \
+| | | | | | (_) | (_| | | |     | | (_) | |_| | |  | | | |  __/  __/ | |_| |_| | |_) |  __/
+|_| |_| |_|\___/ \__,_|_|_|     | |\___/ \__,_|_|  |_| |_|\___|\___|  \__|\__, | .__/ \___|
+                               _/ |                                        __/ | |         
+                              |__/                                        |___/|_|         
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+#jt_reservoirsManager table{
+	width: 50%;
+}
+#jt_reservoirsManager>table>tbody>tr{
+	border: none;
+}
